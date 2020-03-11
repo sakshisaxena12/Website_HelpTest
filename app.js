@@ -8,7 +8,12 @@ require('dotenv').config();
 var mongoose = require('mongoose');
 
 // Connecting to database
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect(
+  process.env.MONGO_URL,
+  { 
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
 .then((db)=>{
   console.log('Connected to Database');
 }).catch((err)=>{
@@ -16,6 +21,7 @@ mongoose.connect(process.env.MONGO_URL)
 })
 
 // Routes
+var renderHtml = require('./routes/renderHtml');
 var contactRouter = require('./routes/contact-us');
 
 var app = express();
@@ -32,6 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Routes
+app.get('*', renderHtml);
 app.use('/contact', contactRouter);
 
 // catch 404 and forward to error handler
