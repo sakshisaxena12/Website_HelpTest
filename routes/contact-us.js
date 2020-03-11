@@ -33,7 +33,7 @@ contactRouter.route('/')
 
     var mailOptions = {
         from: process.env.MAIL_ID,
-        to: 'richardjob05@gmail.com',//process.env.TO_MAIL_ID,
+        to: process.env.TO_MAIL_ID,
         subject: `${formData.name} | ${formData.email}`,
         text: formData.message,
     }
