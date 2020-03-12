@@ -12,7 +12,6 @@ contactRouter.route('/')
         // Store in Database
         Messages.create(req.body)
             .then((Message) => {
-                res.redirect('/#contact')
                 res.status(200)
             })
             .catch((err) => {

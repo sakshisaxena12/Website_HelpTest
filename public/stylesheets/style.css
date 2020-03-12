@@ -74,14 +74,17 @@ nav ul li a:hover {
 .header {
   padding: 60px;
 
-  background: url("../images/header.jpg");
+  background-image: url("../images/header3.jpg");
   background-size: cover;
+  background-attachment: fixed;
   color: white;
+  max-width:100%;
   font-size: 30px;
-  height: 100%;
+  height: auto;
   text-align: center;
   margin-top: 00px;
 }
+
 
 /*our-team-main*/
 /*=============== team ===============*/
