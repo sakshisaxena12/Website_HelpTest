@@ -12,6 +12,7 @@ contactRouter.route('/')
         // Store in Database
         Messages.create(req.body)
             .then((Message) => {
+                res.redirect('/#form')
                 res.status(200)
             })
             .catch((err) => {
