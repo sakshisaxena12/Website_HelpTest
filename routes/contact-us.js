@@ -8,16 +8,21 @@ var Messages = require('../models/contact-message')
 
 contactRouter.route('/')
     .post(form.none(), (req, res) => {
+        console.log('post request');
+        
 
         // Store in Database
         Messages.create(req.body)
             .then((Message) => {
+                console.log('Messages stored in database');
+                res.statusCode = 200;
                 res.redirect('/#form')
-                res.status(200)
+                res.end()
             })
             .catch((err) => {
                 console.error(err);
-                res.status(304);
+                res.statusCode = 304
+                res.end()
             })
 
         // Send Email
@@ -31,8 +36,8 @@ contactRouter.route('/')
             },
         })
 
-        mailer.verify((err,success)=>{
-            if(err) console.log(err);
+        mailer.verify((err, success) => {
+            if (err) console.log(err);
             else console.log('Signed into email');
         })
 
@@ -43,11 +48,12 @@ contactRouter.route('/')
             text: formData.message,
         }
 
-        mailer.sendMail(mailOptions).then((mail) => {
-            console.log('Mail sent');
-        })
+        mailer.sendMail(mailOptions)
+            .then((mail) => {
+                console.log('Mail Sent');
+            })
             .catch((err) => {
-                console.log(err);
+                console.log('Mail Failed');
             })
 
     })
