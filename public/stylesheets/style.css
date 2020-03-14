@@ -74,7 +74,7 @@ nav ul li a:hover {
 .header {
   padding: 60px;
 
-  background-image: url("../images/header3.jpg");
+  background-image: url("../images/head45.jpg");
   background-size: cover;
   background-attachment: fixed;
   color: white;
@@ -82,7 +82,7 @@ nav ul li a:hover {
   font-size: 30px;
   height: auto;
   text-align: center;
-  margin-top: 00px;
+  
 }
 
 
@@ -299,7 +299,7 @@ nav ul li a:hover {
   margin-top: 0rem;
 }
 .section_content {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   align-items: flex-start;
 }
@@ -466,7 +466,7 @@ nav ul li a:hover {
 .contact-image img {
   border-radius: 6rem;
   width: 11%;
-  margin-top: -3%;
+ 
   transform: rotate(29deg);
 }
 .contact-form form {
@@ -476,8 +476,8 @@ nav ul li a:hover {
   margin-bottom: -7%;
 }
 .contact-form h3 {
-  margin-bottom: 8%;
-  margin-top: -10%;
+  margin-bottom: 20px;
+  margin-top: -20%;
   text-align: center;
   color: #0062cc;
 }
@@ -500,3 +500,5 @@ nav ul li a:hover {
   border: none;
   cursor: pointer;
 }
+
+

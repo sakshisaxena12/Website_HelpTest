@@ -16,7 +16,7 @@ contactRouter.route('/')
             .then((Message) => {
                 console.log('Messages stored in database');
                 res.statusCode = 200;
-                res.redirect('/#form')
+                res.redirect('/contact')
                 res.end()
             })
             .catch((err) => {
