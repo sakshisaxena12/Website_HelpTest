@@ -29,7 +29,7 @@
       data-spy="affix"
       data-offset-top="197"
     >
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#home">
         <img src="../images/logo1.png" alt="" />
       </a>
       <button
@@ -46,8 +46,8 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
+          <li class="nav-item ">
+            <a class="nav-link" href="#home"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
@@ -96,19 +96,80 @@
         </form>
       </div>
     </nav>
+<!-------------------------------------------->
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-    <div class="header">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="../images/5.jpg" style="width:100%">
+    <div class="carousel-inner" style="font-size:30px">
       <div class="item active">
-        <h2 class="bold-txt" style="color: orange;background-color:rgba(0,0,0,0.4) ;">
+        <h1 class="bold-txt" style="color: orange;text-align:center;">
                                   HELPING HANDS
-                          </h2><!-- /.bold-text -->	
-        <p class="thin-txt" style="color: snow;background-color:rgba(0,0,0,0.4) ;">
+                          </h1><!-- /.bold-text -->	
+        <p class="thin-txt" style="text-align:center;color:white;">
 Problems are with Everyone and Everywhere <br>Here we are for you to give satisfying Solutions to your problems as<br><b>"For U We Care"</b>                                     </p><!-- /.thin-text -->
-      
-      </div>
-    </div>
+       	
+      </div><!-- /.item -->
+    </div></div>
 
-    <!--sdfnsfskfkd-->
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="../images/2.jpg" style="width:100%">
+    <div class="carousel-inner">
+      <div class="item active" style="font-size:30px">
+        <h1 class="bold-txt" style="color: orange;text-align:center;">
+                                  HELPING HANDS
+                          </h1><!-- /.bold-text -->	
+        <p class="thin-txt" style="text-align:center;color:white;">
+Problems are with Everyone and Everywhere <br>Here we are for you to give satisfying Solutions to your problems as<br><b>"For U We Care"</b>                                     </p><!-- /.thin-text -->
+        	
+      </div><!-- /.item -->
+    </div></div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="../images/1.jpg" style="width:100%">
+    <div class="carousel-inner">
+      <div class="item active" style="font-size:30px">
+        <h1 class="bold-txt" style="color: orange;text-align:center;">
+                                  HELPING HANDS
+                          </h1><!-- /.bold-text -->	
+        <p class="thin-txt" style="text-align:center;color:white;">
+Problems are with Everyone and Everywhere <br>Here we are for you to give satisfying Solutions to your problems as<br><b>"For U We Care"</b>                                     </p><!-- /.thin-text -->
+         		
+      </div><!-- /.item -->
+    </div></div>
+
+  
+</div>
+<br>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+<!-------------------------------------------->
+
+<!--sdfnsfskfkd-->
     <div id="about" class="about-section paddingTB60 gray-bg">
       <div class="container">
         <div class="row">
@@ -250,7 +311,7 @@ Problems are with Everyone and Everywhere <br>Here we are for you to give satisf
           alt="rocket_contact"
         />
       </div>
-      <form name="contact-form" id="form" method="POST" onsubmit="submitform()" action="http://localhost:5000/contact" > <!--https://helping-hands-website-test.herokuapp.com/contact-->
+      <form name="contact-form" id="form" method="POST" onsubmit="submitform()" action="https://helping-hands-website-test.herokuapp.com/contact" >
         <h3>Drop Us a Message</h3>
         <div class="row">
           <div class="col-md-6">
