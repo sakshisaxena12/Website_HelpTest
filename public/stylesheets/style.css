@@ -1,11 +1,111 @@
+/*! CSS Used from: http://werhelpinghands.tk/assets/css/bootstrap.min.css */
+section{display:block;}
+h1{font-size:2em;margin:0.67em 0;}
+img{border:0;}
+@media print{
+*{text-shadow:none!important;color:#000!important;background:transparent!important;box-shadow:none!important;}
+img{page-break-inside:avoid;}
+img{max-width:100%!important;}
+}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+img{vertical-align:middle;}
+.img-responsive{display:block;max-width:100%;height:auto;}
+h1,h4,h5{font-family:inherit;font-weight:500;line-height:1.1;color:inherit;}
+h1{margin-top:22px;margin-bottom:11px;}
+h4,h5{margin-top:11px;margin-bottom:11px;}
+h1{font-size:41px;}
+h4{font-size:20px;}
+h5{font-size:16px;}
+.text-center{text-align:center;}
+.row{margin-left:-15px;margin-right:-15px;}
+.col-md-3,.col-md-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px;}
+@media (min-width:992px){
+.col-md-3,.col-md-12{float:left;}
+.col-md-12{width:100%;}
+.col-md-3{width:25%;}
+}
+.row:before,.row:after{content:" ";display:table;}
+.row:after{clear:both;}
+/*! CSS Used from: https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css */
+section{display:block;}
+h1{font-size:2em;margin:.67em 0;}
+img{border:0;}
+@media print{
+*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+img{page-break-inside:avoid;}
+img{max-width:100%!important;}
+}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+img{vertical-align:middle;}
+.img-responsive{display:block;max-width:100%;height:auto;}
+h1,h4,h5{font-family:inherit;font-weight:500;line-height:1.1;color:inherit;}
+h1{margin-top:20px;margin-bottom:10px;}
+h4,h5{margin-top:10px;margin-bottom:10px;}
+h1{font-size:36px;}
+h4{font-size:18px;}
+h5{font-size:14px;}
+.text-center{text-align:center;}
+.row{margin-right:-15px;margin-left:-15px;}
+.col-md-12,.col-md-3{position:relative;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width:992px){
+.col-md-12,.col-md-3{float:left;}
+.col-md-12{width:100%;}
+.col-md-3{width:25%;}
+}
+.row:after,.row:before{display:table;content:" ";}
+.row:after{clear:both;}
+/*! CSS Used from: http://werhelpinghands.tk/assets/css/style.css */
+.container-1{max-width:1140px;margin:auto;position:relative;min-height:1px;}
+h1,h4,h5{font-family:'Raleway', sans-serif;}
+img{width:100%;height:auto;}
+:focus{outline:none;}
+::-moz-focus-inner{border:0;}
+.team{min-height:100vh;padding:60px 15px;background-color:#F8CCFA;float:left;width:100%;}
+.team h1{font-size:36px;font-family:open sans;font-weight:700;color:#ffffff;margin:0;padding-bottom:60px;text-align:center;}
+.team h4{font-size:20px;font-family:open sans;margin:20px 0px 10px;color:#ea5e71;text-align:center;font-weight:700;}
+.team h5{font-size:16px;font-family:open sans;font-weight:600;color:#0d0d0d;margin:0px 0px 15px;text-align:center;}
+.img-responsive{border:1px solid #ddd;border-radius:50%;padding:5px;width:150px;margin-left:auto;margin-right:auto;}
+/*! CSS Used fontfaces */
+@font-face{font-family:'Raleway';font-style:normal;font-weight:300;src:local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqhPAMif.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:300;src:local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqZPAA.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:400;src:local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:400;src:local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:600;src:local('Raleway SemiBold'), local('Raleway-SemiBold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwPIsWqhPAMif.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:600;src:local('Raleway SemiBold'), local('Raleway-SemiBold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwPIsWqZPAA.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:700;src:local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtWqhPAMif.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:700;src:local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtWqZPAA.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:800;src:local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIouWqhPAMif.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:800;src:local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIouWqZPAA.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:900;src:local('Raleway Black'), local('Raleway-Black'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwK4vWqhPAMif.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:900;src:local('Raleway Black'), local('Raleway-Black'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwK4vWqZPAA.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
+.mySlides {display: none;height: 200px;
+  width: 400px;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  height: 200px;
+  width: 400px;
   position: relative;
   margin: auto;
   
@@ -39,23 +139,13 @@ img {vertical-align: middle;}
 
 
 
-.txtcont h1{
-  font-size: 55px;
-  
-}
-.txtcont{
-background-color: rgba(0, 0, 0, 0.5);
-width: 600px;
-position: absolute;
-margin: 150px 25px 25px 24%;
-}
+
 
 .itemactive{
-  height: 600px;
   width: 100%;
-  background-image: url(../images/16.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+  height: 518px;
+  background-image: url(../images/banner.jpg);
+  background-size: 100% 100%;
 
 
 
@@ -80,7 +170,7 @@ margin: 150px 25px 25px 24%;
 /*_____________--------------________________*/
 .navbar-brand img {
   max-height: 100%;
-  max-width: 100%;
+  width: 150px;
 
   overflow: visible;
   padding-top: 0;
