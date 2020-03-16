@@ -621,11 +621,25 @@ img {vertical-align: middle;}
     margin-left: 0;
     width: 100%;
   }
+
+  .itemactive{
+    height: 310px;
+  }
+
+}
+@media screen and (max-width: 750px) {
+  .itemactive{
+    height: 350px;
+  }
 }
 @media screen and (max-width: 424px){
 .txtcont{
   margin-left: 0;
   width: 100%;
+}
+
+.itemactive{
+  height: 280px;
 }
 
 }

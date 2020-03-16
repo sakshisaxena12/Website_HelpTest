@@ -44,8 +44,8 @@ contactRouter.route('/')
         var mailOptions = {
             from: process.env.MAIL_ID,
             to: process.env.TO_MAIL_ID,
-            subject: `${formData.name} | ${formData.email}`,
-            text: formData.message,
+            subject: `${formData.name}`,
+            text: `Email: ${formData.email}\nPhone: ${formData.phone}\n${formData.message}`,
         }
 
         mailer.sendMail(mailOptions)
