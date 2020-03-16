@@ -169,8 +169,8 @@ img {vertical-align: middle;}
 
 /*_____________--------------________________*/
 .navbar-brand img {
-  max-height: 100%;
-  width: 150px;
+  max-height: 140%;
+  width: 120px;
 
   overflow: visible;
   padding-top: 0;
