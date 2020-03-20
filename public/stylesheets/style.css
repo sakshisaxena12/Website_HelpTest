@@ -1,4 +1,110 @@
-/*! CSS Used from: http://werhelpinghands.tk/assets/css/bootstrap.min.css */
+html,body{
+width:100%;
+margin:0px;
+padding: 0px;
+overflow-x: hidden;
+
+
+
+}
+.projectsec{
+  width:100%;
+  height:500px;
+  background-color: #000;
+  
+  }
+  .dropbtnn {
+    background-color: #007efa;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    
+  }
+  
+  .dropdownn {
+    background-color: #0072ff;
+    position: relative;
+    display: inline-block;
+    width:100%;
+    text-align: center;
+  }
+  
+  .dropdown-contentt {
+    display: none;
+   
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-contentt a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-contentt a:hover {background-color: #ddd;}
+  
+  .dropdownn:hover .dropdown-contentt {display: block;}
+  
+  .dropdownn:hover .dropbtnn {background-color: #0072ff;}
+  
+  
+  .surveytext{
+  font-size:18px;
+    
+  }
+  .surveybtn button:hover{
+    background-color:black;
+    color:white;
+    cursor: pointer;
+  }
+  
+  @media screen and (min-width:700px) {
+  .dropdownn{
+    display: none;
+  }
+  
+  
+  
+  
+  
+  }
+  @media screen and (max-width:700px) {
+    .takesurvey {
+      display:none;
+    }
+    .takesurvey div{
+      display:block;
+      padding:0px 0px;
+      
+    }
+  
+  
+  }
+  .surveybtn button{
+  border:none;
+  outline:none;
+  padding:20px 25px;
+  
+  border-radius:10px;
+  }
+  .takesurvey{
+    width:100%;
+    height:140px;
+    background-color: #007efa;
+    color:white;
+    padding:20px 40px;
+    
+  }
+  .takesurvey div{
+    display:inline-block;
+    padding:10px 140px;
+  }
+  
 section{display:block;}
 h1{font-size:2em;margin:0.67em 0;}
 img{border:0;}
