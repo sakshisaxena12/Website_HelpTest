@@ -697,6 +697,17 @@ img {vertical-align: middle;}
   border: none;
   cursor: pointer;
 }
+
+#search-bar{
+  width: 25%;
+}
+
+@media screen and (max-width: 990px){
+  #search-bar{
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 640px){
 .txtcont{
   margin-left: 0;
@@ -716,6 +727,9 @@ img {vertical-align: middle;}
 @media screen and (max-width: 360px){
   .txtcont{
     margin-left: 0;
+    width: 100%;
+  }
+  #search-bar{
     width: 100%;
   }
 
