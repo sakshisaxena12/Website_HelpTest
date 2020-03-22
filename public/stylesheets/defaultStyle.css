@@ -30,11 +30,14 @@ a {
   }
 
   .navbar-collapse {
-    margin: 0;
+    margin-top: 0px;
     background-color: rgb(52, 58, 64) !important;
     height: 100%;
     padding: 0;
     width: 100%;
+  }
+  .show {
+    margin-top: 10px;
   }
 }
 .slideshow-container img {
