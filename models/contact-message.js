@@ -18,6 +18,8 @@ const contactMessage = new Schema({
         type: String,
         required: true
     }
+},{
+    timestamps: true
 })
 
 var Messages = mongoose.model('Message',contactMessage);
