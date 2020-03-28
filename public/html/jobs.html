@@ -1,68 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jobs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jobs</title>
-
-  <link rel="stylesheet" href="../stylesheets/style.css" />
-  <link rel="stylesheet" href="../stylesheets/defaultStyle.css" />
-  <script type="text/javascript" src="engine1/jquery.js"></script>
-  <!-- End CSS Slider HEAD section -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-</head>
-
-<body>
-  <div class="header">
-    <img
-      src="../images/lb2.png"
-      style="width:170px;height:130px;margin-left: 110px;"
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <link rel="stylesheet" href="../stylesheets/defaultStyle.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <!-- End CSS Slider HEAD section -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
     />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
     <img
       id="cctv"
-      src="../images/c2.png"
+      src="../images/c1.png"
       style="width: 130px ; height:100px;float: right;"
     />
-  </div>
-  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
-  <label for="openSidebarMenu" class="sidebarIconToggle">
-    <img
-      id="gear"
-      src="../images/g2.png"
-      style="width: 130px ; height:100px;float: left;"
-    />
-  </label>
 
-  <div id="sidebarMenu">
-    <ul class="sidebarMenuInner">
-      <li><a href="/main">Home</a></li>
-      <li><a href="/#about">About us</a></li>
-      <li><a href="/#contact-us">Contact us</a></li>
-      <li><a href="/projects"> Projects</a></li>
-      <li><a href="/surveys">Surveys</a></li>
-      <li>
-        More<span><a href="/jobs">Jobs</a></span
-        ><span><a href="/career">Career</a></span
-        ><span><a href="/team">Our Team</a></span>
-      </li>
-    </ul>
-  </div>
-  <br>
-  <br>
-  <div class="text-center" style="margin-top: 120px;">
-    <img src="../images/job.jpg " style="width: 500px; height: 300px;" />
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <img
+        id="gear"
+        src="../images/g1.png"
+        style="width: 110px ; height:70px;float: left;margin-top: 5px;margin-left: 5px;"
+      />
+    </label>
+
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="/main">Home</a></li>
+        <li><a href="/#about">About us</a></li>
+        <li><a href="/#contact-us">Contact us</a></li>
+        <li><a href="/projects"> Projects</a></li>
+        <li><a href="/surveys">Surveys</a></li>
+        <li>
+          More<span><a href="/jobs">Jobs</a></span
+          ><span><a href="/career">Career</a></span
+          ><span><a href="/team">Our Team</a></span>
+        </li>
+      </ul>
+    </div>
+
+    <div style="text-align: center;">
+      <img
+        id="mainlogo"
+        src="../images/lb2.png"
+        style="width:170px;height:100px;margin-top: -60px;"
+      />
+    </div>
+    <div class="text-center" style="margin-top: 70px;">
+      <img src="../images/job.jpg " style="width: 500px; height: 300px;" />
+      <br />
+      <h3>LATEST UPCOMINGG JOBS/INTERNSHIPS...</h3>
+    </div>
     <br />
-    <h3>LATEST UPCOMINGG JOBS/INTERNSHIPS...</h3>
-  </div>
-  <br />
+    <script>
+      $('#openSidebarMenu').change(function() {
+      if ($('#openSidebarMenu').is(":checked")) {
+        $('body').css('overflow','hidden');
+      } else {
+        $('body').css('overflow','auto');
+      }
+    });
+    </script>
 
-  <!--Footer-->
-  <footer
+    <!--Footer-->
+    <footer
       class="full-footer"
       style="border-top-color:black;width:100%;  border:solid"
     >
@@ -124,11 +145,11 @@
           <div class="col-md-3">
             <h6 style="color:white;">Contact Us</h6>
             <a href="tel:+917906980871">
-              <i class="fas fa-phone"></i> +(91) 7906980871</a
+              <i class="fas fa-phone" style="color: orangered !important;"></i> +(91) 7906980871</a
             >
             <br />
             <a href="mailto:werrhelpinghands@gmail.com"
-              ><i class="fas fa-envelope"></i> werrhelpinghands@gmail.com</a
+              ><i class="fas fa-envelope" style="color: orangered !important;"></i> werrhelpinghands@gmail.com</a
             ><br />
             <div class="embed-responsive embed-responsive-16by9">
               <iframe
@@ -154,16 +175,24 @@
         </div>
       </div>
     </footer>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/159a527170.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/159a527170.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

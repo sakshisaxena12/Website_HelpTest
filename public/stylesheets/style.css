@@ -10,7 +10,9 @@ body {
   margin: 0;
   font-family: "Varela Round", sans-serif;
 }
-
+.fp{
+  position: fixed ;
+}
 .header {
   display: block;
   margin: 0 auto;
@@ -75,7 +77,12 @@ body {
 }
 input[type="checkbox"]:checked ~ #sidebarMenu {
   transform: translateX(0);
+  
+  
 }
+  
+
+
 
 input[type="checkbox"] {
   transition: all 0.3s;
@@ -86,8 +93,9 @@ input[type="checkbox"] {
   transition: all 0.3s;
   box-sizing: border-box;
   cursor: pointer;
-  position: absolute;
+  position: relative;
   z-index: 99;
+  
 }
 .spinner {
   transition: all 0.3s;
@@ -510,7 +518,7 @@ body {
 }
 
 .surveytext {
-  font-size: 18px;
+  font-size: 25px;
 }
 .surveybtn button:hover {
   background-color: black;
@@ -546,6 +554,7 @@ body {
   margin-top: -14px;
   border-radius: 10px;
   background-color: #fb6008;
+  color: white;
 }
 .takesurvey {
   width: 100%;
@@ -553,12 +562,17 @@ body {
   background-color: white;
   color: black;
   padding: 20px 40px;
+  text-align: center;
 }
 .takesurvey div {
-  display: inline-block;
-  padding: 10px 140px;
+  display: inline;
 }
-
+.takesurvey .surveytext {
+  margin-left: 30px;
+}
+.takesurvey .surveybtn {
+  margin-left: 50px;
+}
 * {
   box-sizing: border-box;
 }
@@ -568,8 +582,8 @@ body {
 }
 .mySlides {
   display: none;
-  height: 200px;
-  width: 400px;
+  height: 270px;
+  width: 470px;
 }
 img {
   vertical-align: middle;
@@ -577,8 +591,8 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-  height: 200px;
-  width: 400px;
+  height: 270px;
+  width: 470px;
   position: relative;
   margin: auto;
 }
@@ -619,9 +633,11 @@ img {
 
 .itemactive {
   width: 100%;
+  margin-top: -84px;
   height: 518px;
-  background-image: url(../images/hhban.png);
+  background-image: url(../images/banner.jpg);
   background-size: 100% 100%;
+  text-align: center;
 }
 
 @media screen and (max-width: 360px) {
@@ -753,7 +769,7 @@ img {
 }
 
 .about-title h1 {
-  color: #535353;
+  color: black;
   font-size: 45px;
   font-weight: 600;
 }
@@ -768,7 +784,7 @@ img {
   margin-bottom: 24px;
 }
 .about-title p {
-  color: #7a7a7a;
+  color: black;
   line-height: 1.8;
   margin: 0 0 15px;
 }
@@ -776,7 +792,7 @@ img {
   padding-bottom: 12px;
 }
 .about-img {
-  padding-left: 57px;
+  padding-left: 570px;
 }
 
 /* Social Icons */
@@ -787,7 +803,7 @@ img {
   margin-right: 10px;
   padding: 0px;
   font-size: 35px;
-  color: #323232;
+  color: black;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 .about-icons li {
@@ -826,13 +842,9 @@ img {
 }
 .contact-image {
   text-align: center;
+  font-size: 70px;
 }
-.contact-image img {
-  border-radius: 6rem;
-  width: 11%;
 
-  transform: rotate(29deg);
-}
 .contact-form form {
   padding: 14%;
 }
@@ -926,7 +938,7 @@ img {
   }
 }
 .about-section {
-  background-color: silver;
+  background-color: #c6bfd2;
 }
 
 .full-footer {
@@ -939,4 +951,9 @@ img {
 }
 .foot {
   text-decoration: none;
+}
+#cctv {
+  width: 130px;
+  height: 100px;
+  float: right;
 }

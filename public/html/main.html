@@ -5,6 +5,7 @@
     <title>Helping Hands</title>
     <link rel="stylesheet" href="../stylesheets/style.css" />
     <link rel="stylesheet" href="../stylesheets/defaultStyle.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- Start CSS Slideshow HEAD section -->
     <!-- End CSS Slider HEAD section -->
@@ -27,25 +28,20 @@
   </head>
 
   <body>
-    <div class="header">
-      <img
-        src="../images/lb2.png"
-        style="width:170px;height:130px;margin-left: 110px;"
-      />
-      <img
+    <img
         id="cctv"
-        src="../images/c2.png"
-        style="width: 130px ; height:100px;float: right;"
-      />
-    </div>
-    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
-    <label for="openSidebarMenu" class="sidebarIconToggle">
+        src="../images/c1.png"
+              />
+    
+          <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+    <label  for="openSidebarMenu" class="sidebarIconToggle">
       <img
         id="gear"
-        src="../images/g2.png"
-        style="width: 130px ; height:100px;float: left;"
+        src="../images/g1.png"
+        style=" width: 95px ; height:55px;float: left;margin-top: 5px;margin-left: 5px;"
       />
     </label>
+  
 
     <div id="sidebarMenu">
       <ul class="sidebarMenuInner">
@@ -65,8 +61,27 @@
     <div
       class="itemactive"
       style="font-size:30px;background-color: yellow;"
-    ></div>
+    >
+    
+    <img
+    id="mainlogo"
+    src="../images/lb2.png"
+    style="width:200px;height:100px;margin-top: 15px;"
+  />
+  
+  
+  
+  </div>
     <!-- /.item -->
+<script>
+  $('#openSidebarMenu').change(function() {
+  if ($('#openSidebarMenu').is(":checked")) {
+    $('body').css('overflow','hidden');
+  } else {
+    $('body').css('overflow','auto');
+  }
+});
+</script>
 
     <!-------------------------------------------->
 
@@ -91,7 +106,7 @@
     <!---------------------div------>
     <div class="takesurvey">
       <div class="surveytext">
-        Get Started with Us <i class="fas fa-caret-right"></i>
+        <b>Get Started with Us</b> 
       </div>
       <div class="surveybtn">
         <a href="/surveys">
@@ -102,7 +117,7 @@
 
     <div class="dropdownn">
       <button class="dropbtnn">
-        YOUR OPINION MATTERS <i class="fas fa-caret-down"></i>
+        <b>Get Started with Us</b> <i class="fas fa-caret-down"></i>
       </button>
       <div class="dropdown-contentt">
         <a href="/surveys">TAKE A SURVEY</a>
@@ -110,7 +125,7 @@
     </div>
 
     <!--sdfnsfskfkd-->
-    <div id="about" class="about-section paddingTB60 gray-bg">
+    <div id="about" class="about-section paddingTB60 darkgray-bg" >
       <div class="container">
         <div class="row">
           <div class="col-md-7 col-sm-6 text">
@@ -187,7 +202,7 @@
 
     <!------------------------------------------------------------------------>
 
-    <!--    <div class="containeer" id="pro">
+     <div class="containeer" id="pro">
       <h2 class="titles">
         <span class="pull-right"
           ><a href="/projects"
@@ -258,17 +273,12 @@
         </ul>
       </div>
     </div>
-  -->
-    <!------------------------------------------------------------------------>
-
+  
     <!--Form-->
 
     <div id="contact-us" class="container contact-form">
       <div class="contact-image">
-        <img
-          src="https://image.ibb.co/kUagtU/rocket_contact.png"
-          alt="rocket_contact"
-        />
+        <i class="fas fa-rocket" "></i>
       </div>
       <form
         name="contact-form"
@@ -277,7 +287,7 @@
         onsubmit="submitform()"
         action="https://helping-hands-website-test.herokuapp.com/contact"
       >
-        <h3 style="color: black;">Drop Us a Message</h3>
+        <h3 style="color: orangered;">Drop Us a Message</h3>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
@@ -397,12 +407,12 @@
           </div>
           <div class="col-md-3">
             <h6 style="color:white;">Contact Us</h6>
-            <a href="tel:+917906980871">
-              <i class="fas fa-phone"></i> +(91) 7906980871</a
+            <a href="tel:+917906980871" >
+              <i class="fas fa-phone" style="color: orangered !important;" ></i> +(91) 7906980871</a
             >
             <br />
-            <a href="mailto:werrhelpinghands@gmail.com"
-              ><i class="fas fa-envelope"></i> werrhelpinghands@gmail.com</a
+            <a href="mailto:werrhelpinghands@gmail.com" 
+              ><i class="fas fa-envelope" style="color: orangered !important;"></i> werrhelpinghands@gmail.com</a
             ><br />
             <div class="embed-responsive embed-responsive-16by9">
               <iframe
