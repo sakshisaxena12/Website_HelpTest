@@ -5,7 +5,11 @@ body {
   height: 100%;
 }
 body {
-  background: #fff;
+  background: url(../images/banner.jpg);
+  background-attachment: fixed;
+  background-size:100%  100%;
+  background-repeat: no-repeat;
+  
   padding: 0;
   margin: 0;
   font-family: "Varela Round", sans-serif;
@@ -35,7 +39,7 @@ body {
   transition: 0.5s;
   transform: translateX(-250px);
   transition: transform 250ms ease-in-out;
-  background-color: rgb(255, 158, 32);
+  background-color: black;
 }
 #sidebarMenu ul {
   margin-top: 60px;
@@ -226,7 +230,7 @@ h5 {
 .col-md-3,
 .col-md-12 {
   position: relative;
-  min-height: 1px;
+  min-height: 7px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -412,27 +416,25 @@ img {
 
 .titles {
   background: black;
-  border: 8px double #fff;
+  border: 2px solid #fff;
   padding: 10px;
   color: #fff;
 }
 
 .containeer {
   background: #f4bb49;
+  
 }
 
 .scroll-box {
   background: #f4bb49;
   display: flex;
   widows: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-.scroll-box:hover {
-  overflow: auto;
   height: 250px;
+  overflow: auto;
   overflow-y: hidden;
 }
+
 .scroll-box li {
   display: inline-block;
 }
@@ -465,114 +467,9 @@ img {
   line-height: 20px;
 }
 
-html,
-body {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-}
 
-.dropbtnn {
-  background: orangered;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
 
-.dropdownn {
-  background-color: white;
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
 
-.dropdown-contentt {
-  display: none;
-
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-contentt a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-contentt a:hover {
-  background-color: #ddd;
-}
-
-.dropdownn:hover .dropdown-contentt {
-  display: block;
-}
-
-.dropdownn:hover .dropbtnn {
-  background-color: orange;
-}
-
-.surveytext {
-  font-size: 25px;
-}
-.surveybtn button:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
-
-@media screen and (min-width: 1100px) {
-  .dropdownn {
-    display: none;
-  }
-}
-@media screen and (max-width: 1125px) {
-  .takesurvey {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .takesurvey {
-    display: none;
-  }
-  .takesurvey div {
-    display: block;
-    padding: 0px 0px;
-  }
-}
-.surveybtn button {
-  border: none;
-  outline: none;
-  width: 180px;
-  height: 50px;
-  margin-top: -14px;
-  border-radius: 10px;
-  background-color: #fb6008;
-  color: white;
-}
-.takesurvey {
-  width: 100%;
-  height: 90px;
-  background-color: white;
-  color: black;
-  padding: 20px 40px;
-  text-align: center;
-}
-.takesurvey div {
-  display: inline;
-}
-.takesurvey .surveytext {
-  margin-left: 30px;
-}
-.takesurvey .surveybtn {
-  margin-left: 50px;
-}
 * {
   box-sizing: border-box;
 }
@@ -585,14 +482,11 @@ body {
   height: 270px;
   width: 470px;
 }
-img {
-  vertical-align: middle;
-}
 
 /* Slideshow container */
 .slideshow-container {
-  height: 270px;
-  width: 470px;
+  height: 200px;
+  width: 400px;
   position: relative;
   margin: auto;
 }
@@ -634,8 +528,7 @@ img {
 .itemactive {
   width: 100%;
   margin-top: -84px;
-  height: 518px;
-  background-image: url(../images/banner.jpg);
+  height: 500px;
   background-size: 100% 100%;
   text-align: center;
 }
@@ -762,7 +655,7 @@ img {
 /*=============== team ===============*/
 /*efsfaesd*/
 .paddingTB60 {
-  padding: 60px 0px 60px 0px;
+  padding: 60px 0px 0px 0px;
 }
 .gray-bg {
   background: #f1f1f1 !important;
@@ -789,7 +682,7 @@ img {
   margin: 0 0 15px;
 }
 .about-paddingB {
-  padding-bottom: 12px;
+  
 }
 .about-img {
   padding-left: 570px;
@@ -830,10 +723,11 @@ img {
 /*form*/
 .container contact-form {
   background-color: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+  
 }
 .contact-form {
   background: #fff;
-  margin-top: 00%;
+  
   margin-bottom: 0%;
   width: 70%;
 }
@@ -914,24 +808,16 @@ img {
     width: 100%;
   }
 
-  .itemactive {
-    height: 310px;
-  }
+  
 }
-@media screen and (max-width: 750px) {
-  .itemactive {
-    height: 350px;
-  }
-}
+
 @media screen and (max-width: 424px) {
   .txtcont {
     margin-left: 0;
     width: 100%;
   }
 
-  .itemactive {
-    height: 280px;
-  }
+  
 
   #search-bar {
     width: 100%;
@@ -952,8 +838,212 @@ img {
 .foot {
   text-decoration: none;
 }
-#cctv {
-  width: 130px;
-  height: 100px;
+.cctvbox{
   float: right;
+}
+#cctv {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  margin-top: 11px;
+  margin-right: 5px;
+  
+}
+#mainlogo{
+  width:200px;
+  height:80px;
+  margin-top: 15px;
+  margin-left: 80px
+}
+
+#srchbox{
+  width:270px;
+  position: absolute;
+  margin-left: -180px;
+  display: none;
+  z-index: 1; /* Stay on top */
+  
+}
+
+
+.surveytext {
+  font-size: 25px;
+  font-style: Calibri;
+}
+.surveybtn button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+
+.surveybtn button {
+  border: none;
+  outline: none;
+  width: 180px;
+  height: 50px;
+  margin-top: -14px;
+  border-radius: 10px;
+  background-color: #fb6008;
+  color: white;
+}
+.takesurvey {
+  margin-top:60px;
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  color: black;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.takesurvey div {
+  display: inline;
+}
+.takesurvey .surveytext {
+  margin-left: 30px;
+}
+.takesurvey .surveybtn {
+  margin-left: 50px;
+}
+
+@media all and (max-width:600px){
+body{
+  background: url(../images/ber2.png);
+  background-attachment: fixed;
+  background-size:100% 545px;
+  background-repeat: no-repeat;
+}
+#cctv{
+  width: 60px ; 
+  height: 60px;
+}
+#mainlogo{
+  width:190px;
+  height:80px;
+}
+#srchbox{
+  width:200px;
+  position: absolute;
+  margin-left: -150px;
+  margin-top: 25px;
+  display: none;
+  z-index: 1; /* Stay on top */
+  
+}
+.surveytext {
+  font-size: 15px;
+}
+.surveybtn button {
+  border: none;
+  outline: none;
+  width: 130px;
+  height: 50px;
+  margin-top: -14px;
+  border-radius: 10px;
+  background-color: #fb6008;
+  color: white;
+}
+.takesurvey {
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  color: black;
+  padding: 20px 10px;
+  text-align: center;
+}
+}
+
+@media all and (max-width:370px){
+  body{
+    background: url(../images/ber2.png);
+    background-attachment: fixed;
+    background-size:100% 545px;
+    
+    background-repeat: no-repeat;
+  }
+  #cctv{
+    width: 60px ; 
+    height: 60px;
+  }
+  #mainlogo{
+    width:170px;
+    height:70px;
+  }
+  #srchbox{
+    width:200px;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: 25px;
+    display: none;
+    z-index: 1; /* Stay on top */
+    
+  }
+  .surveytext {
+    font-size: 13px;
+  }
+  .surveybtn button {
+    font-size: 13px;
+    border: none;
+    outline: none;
+    width: 110px;
+    height: 30px;
+    margin-top: -14px;
+    border-radius: 10px;
+    background-color: #fb6008;
+    color: white;
+  }
+  .takesurvey {
+    margin-top:60px;
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    color: black;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  
+}
+
+@media all and (max-width:340px){
+  body{
+    background: url(../images/ber2.png);
+    background-attachment: fixed;
+    background-size:100% 545px;
+    
+    background-repeat: no-repeat;
+  }
+  #cctv{
+    width: 60px ; 
+    height: 60px;
+  }
+  #mainlogo{
+    width:140px;
+    height:70px;
+  }
+  
+  .surveytext {
+    font-size: 10px;
+  }
+  .surveybtn button {
+    font-size: 10px;
+    border: none;
+    outline: none;
+    width: 90px;
+    height: 30px;
+    margin-top: -14px;
+    border-radius: 10px;
+    background-color: #fb6008;
+    color: white;
+  }
+  .takesurvey {
+    margin-top:60px;
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    color: black;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  
 }

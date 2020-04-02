@@ -28,46 +28,49 @@
     }
   </style>
   <script src="https://kit.fontawesome.com/159a527170.js" crossorigin="anonymous"></script>
+
+  <script async src="https://cse.google.com/cse.js?cx=000536282495068162456:uakw1drvjrv"></script>
 </head>
 
-<body>
+<body style="background: #dfe6e9 !important">
   <!-- Main Menu -->
-  
-    <img
+  <span class="cctvbox">
+    <button onclick="myf()" style="background: none; border:none;outline: none;"><img
       id="cctv"
-      src="../images/c1.PNG"
-      style=" width: 130px ; height:100px;float: right;"
-    />
-  
-  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
-  <label for="openSidebarMenu" class="sidebarIconToggle">
-    <img
-      id="gear"
-      src="../images/g1.PNG"
-      style="width: 110px ; height:70px;float: left;margin-top: 5px;margin-left: 5px;"
-    />
-  </label>
+      src="../images/cctv2.PNG"
+    /></button>
 
-  <div id="sidebarMenu">
-    <ul class="sidebarMenuInner">
-      <li><a href="/main">Home</a></li>
-      <li><a href="/#about">About us</a></li>
-      <li><a href="/#contact-us">Contact us</a></li>
-      <li><a href="/projects"> Projects</a></li>
-      <li><a href="/surveys">Surveys</a></li>
-      <li>
-        More<span><a href="/jobs">Jobs</a></span
-        ><span><a href="/career">Career</a></span
-        ><span><a href="/team">Our Team</a></span>
-      </li>
-    </ul>
-  </div>
-  <div style="text-align: center;">
-    <img
-      id="mainlogo"
-      src="../images/lb2.png"
-      style="width:170px;height:100px;margin-top: -60px;"
-    /></div>
+<div id="srchbox"><div class="gcse-searchbox-only"></div></div></span>
+
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <img
+        id="gear"
+        src="../images/g1.PNG"
+        style="width: 50px; height:50px; float: left; margin-top: 15px; margin-left: 20px;"
+      />
+    </label>
+
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="/main">Home</a></li>
+        <li><a href="/#about">About us</a></li>
+        <li><a href="/#contact-us">Contact us</a></li>
+        <li><a href="/projects"> Projects</a></li>
+        <li><a href="/surveys">Surveys</a></li>
+        <li><a href="/jobs">Jobs</a></li>
+        <li><a href="/career">Career</a></li>
+        <li><a href="/team">Our Team</a></li>
+      </ul>
+    </div>
+
+    <div style="text-align: center;">
+       <img
+        id="mainlogo"
+        src="../images/logoblack1.png"
+        style="width:200px;height:80px;margin-top: -90px;margin-left: 20px;"
+      />
+    </div>
 
     <script>
       $('#openSidebarMenu').change(function() {
@@ -86,7 +89,7 @@
       PROJECTS&nbsp<i class="fa fa-tasks" aria-hidden="true"></i></h2>
     <!-- Section description -->
     <p class="grey-text text-center w-responsive mx-auto mb-5">
-      <.!----WORKING ON THIS-----.>
+      <.!----Under Construction-----.>
     </p>
 
     <!-- Grid row -->
@@ -133,7 +136,7 @@
                 laboriosam, voluptatem, optio vero odio nam sit officia accusamus minus error nisi architecto
                 nulla ipsum dignissimos. Odit sed qui, dolorum!
               </p>
-              <a class="btn btn-pink btn-rounded btn-md"><i class="fas fa-clone left"></i> View project</a>
+              <a class="btn btn-secondary btn-rounded btn-md"><i class="fas fa-clone left"></i> View project</a>
             </div>
           </div>
         </div>
@@ -157,7 +160,7 @@
                 laboriosam, voluptatem, optio vero odio nam sit officia accusamus minus error nisi architecto
                 nulla ipsum dignissimos. Odit sed qui, dolorum!
               </p>
-              <a class="btn btn-success btn-rounded btn-md"><i class="fas fa-clone left"></i> View project</a>
+              <a class="btn btn-secondary btn-rounded btn-md"><i class="fas fa-clone left"></i> View project</a>
             </div>
           </div>
         </div>
@@ -174,7 +177,21 @@
   </section>
   </div>
 
-
+  <script>
+    function myf(){
+      var x=document.getElementById("srchbox");
+      if (x.style.display === "none")
+      {
+        x.style.display="block";
+    
+      } else {
+        x.style.display="none";
+      }
+    
+    }
+    
+      </script>
+    
 
 
 
@@ -188,7 +205,7 @@
       <div class="container topFooter p-md-3 p-4">
         <div class="row">
           <div class="col-md-3">
-            <h6 style="color: white">HELPING HANDS</h6>
+            <h5 style="color: white">HELPING HANDS</h5>
 
             <p>
               Helping Hands is a Research based Platform / Blog / Medium for
@@ -218,21 +235,21 @@
               ><i class="fab fa-2x fa-whatsapp"></i
             ></a>
           </div>
-
+          &#32;
           <div class="col-md-3">
-            <h6 style="color:white;">Important Links</h6>
+            <h5 style="color:white;">Important Links</h5>
             <a class="p-1" href="login.html">Accounts</a><br />
             <a class="p-1" href="blogs.html">Blog Articles</a><br />
             <a class="p-1" href="social-contact.html">Social Media</a><br />
           </div>
 
           <div class="col-md-3">
-            <h6 style="color: white;">Our Services</h6>
+            <h5 style="color: white;">Our Services</h5>
 
             <a class="p-1" href="/projects">Projects</a><br />
             <a class="p-1" href="/surveys">Surveys</a><br />
             <br /><br /><br />
-            <h6 style="color: white">Available in:</h6>
+            <h5 style="color: white">Available in:</h5>
             <a class="p-1" style="color: orangered" href="#"
               ><i class="fab fa-2x fa-android"></i
             ></a>
@@ -241,12 +258,12 @@
             ></a>
           </div>
           <div class="col-md-3">
-            <h6 style="color:white;">Contact Us</h6>
-            <a href="tel:+917906980871">
-              <i class="fas fa-phone" style="color: orangered !important;"></i> +(91) 7906980871</a
+            <h5 style="color:white;">Contact Us</h5>
+            <a href="tel:+917906980871" >
+              <i class="fas fa-phone" style="color: orangered !important;" ></i> +(91) 7906980871</a
             >
             <br />
-            <a href="mailto:werrhelpinghands@gmail.com"
+            <a href="mailto:werrhelpinghands@gmail.com" 
               ><i class="fas fa-envelope" style="color: orangered !important;"></i> werrhelpinghands@gmail.com</a
             ><br />
             <div class="embed-responsive embed-responsive-16by9">
@@ -266,7 +283,7 @@
       <div class="container-fluid bottomFooter" style="background-color: grey;">
         <div class="row">
           <div class="col-12 text-center pt-2">
-            <p class="foot" style="font-size: 15px; font-weight: 600px;">
+            <p class="foot" style="font-size: 12px; font-weight: 600px;">
               Copyrights @ Helping Hands 2020 - All Rights Reserved
             </p>
           </div>
