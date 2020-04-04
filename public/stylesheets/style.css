@@ -467,6 +467,20 @@ img {
   line-height: 20px;
 }
 
+.projb{
+  font-size: 18px; 
+  background-color: white;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer; 
+  border-radius: 5px;"
+            
+}
+.projb:hover{
+  background-color: orangered;
+  color: white;
+}
 
 
 
