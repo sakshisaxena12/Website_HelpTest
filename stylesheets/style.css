@@ -59,6 +59,7 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 .sidebarMenuInner li {
+  width: 100%;
   list-style: none;
   color: white;
   text-transform: uppercase;
