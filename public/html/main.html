@@ -25,23 +25,17 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script async src="https://cse.google.com/cse.js?cx=000536282495068162456:uakw1drvjrv"></script>
-</head>
+ </head>
 
   <body>
-    <span class="cctvbox">
-    <button onclick="myf()" style="background: none; border:none;outline: none;"><img
-      id="cctv"
-      src="../images/cctv2.PNG"
-    /></button>
+    
 
-<div id="srchbox"><div class="gcse-searchbox-only"></div></div></span>
+   
     <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
     <label for="openSidebarMenu" class="sidebarIconToggle">
       <img
         id="gear"
         src="../images/g1.PNG"
-        style="width: 50px; height:50px; float: left; margin-top: 15px; margin-left: 20px;"
       />
     </label>
 
@@ -65,26 +59,15 @@
     
     <img
     id="mainlogo"
-    src="../images/logoblack2.png"\
+    src="../images/lgwh.png"\
   />
   
   
   
   </div>
-  <script>
-function myf(){
-  var x=document.getElementById("srchbox");
-  if (x.style.display === "none")
-  {
-    x.style.display="block";
+  
+    
 
-  } else {
-    x.style.display="none";
-  }
-
-}
-
-  </script>
     <!-- /.item -->
 <script>
   $('#openSidebarMenu').change(function() {
@@ -98,24 +81,6 @@ function myf(){
 
     <!-------------------------------------------->
 
-    <script>
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides(), 10000); // Change image every 2 seconds
-      }
-    </script>
     <!---------------------div------>
     <div class="takesurvey">
       <div class="surveytext">
@@ -186,6 +151,76 @@ function myf(){
             </div>
           </div>
           <!----------------------------->
+          
+    <div class="containersrch">
+      <form class="search-form" id="search-form"
+      action="javascript:void()"
+      onsubmit="if(this.t1.value!=null &amp;&amp; this.t1.value!='')
+    parent.findString(this.t1.value);return false;"
+      >
+        <input type="text" class="searchbox" id="t1" autocomplete="off" />
+      </form>
+    </div>
+
+
+    <script>
+      var TRange = null;
+
+      function findString(str) {
+        if (parseInt(navigator.appVersion) < 4) return;
+        var strFound;
+        if (window.find) {
+          // CODE FOR BROWSERS THAT SUPPORT window.find
+
+          strFound = self.find(str);
+          if (!strFound) {
+            strFound = self.find(str, 0, 1);
+            while (self.find(str, 0, 1)) continue;
+          }
+        } else if (navigator.appName.indexOf("Microsoft") != -1) {
+          // EXPLORER-SPECIFIC CODE
+
+          if (TRange != null) {
+            TRange.collapse(false);
+            strFound = TRange.findText(str);
+            if (strFound) TRange.select();
+          }
+          if (TRange == null || strFound == 0) {
+            TRange = self.document.body.createTextRange();
+            strFound = TRange.findText(str);
+            if (strFound) TRange.select();
+          }
+        } else if (navigator.appName == "Opera") {
+          alert("Opera browsers not supported, sorry...");
+          return;
+        }
+        if (!strFound) alert("String '" + str + "' not found!");
+        return;
+      }
+    </script>
+    
+
+    <script>
+      var form = document.querySelector("#search-form");
+      var searchbox = document.querySelector(".searchbox");
+
+      // Allows you to submit when you press Enter
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+       
+      });
+
+      // Adds the placeholder when the searchbox is in focus
+      searchbox.addEventListener("focus", function (e) {
+        searchbox.setAttribute("placeholder", "Search...");
+      });
+
+      // Removes Text and the placeholder when the search box is out of focus
+      searchbox.addEventListener("focusout", function (e) {
+        searchbox.value = null;
+        searchbox.removeAttribute("placeholder");
+      });
+    </script>
           
                     <div class="container" style="width: 470px;height: 390px;">
                         <div id="carouselExampleIndicators" class="carousel slide carousel-fade " data-ride="carousel">
