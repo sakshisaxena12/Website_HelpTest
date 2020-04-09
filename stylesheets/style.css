@@ -9,10 +9,9 @@ body {
   margin: 0;
   font-family: "Varela Round", sans-serif;
 }
-.fp{
-  position: fixed ;
+.fp {
+  position: fixed;
 }
-
 
 #sidebarMenu {
   height: 100%;
@@ -67,21 +66,18 @@ body {
 }
 input[type="checkbox"]:checked ~ #sidebarMenu {
   transform: translateX(0);
-  
-  
 }
-  
-.itemactive{
+
+.itemactive {
   margin-top: -25px;
   position: relative;
   background: url(../images/banred.jpg) no-repeat center;
   background-attachment: fixed;
-  background-size:100% 100%;
+  background-size: 100% 100%;
   height: 548px;
   width: 100%;
   text-align: center;
 }
-
 
 input[type="checkbox"] {
   transition: all 0.3s;
@@ -94,7 +90,6 @@ input[type="checkbox"] {
   cursor: pointer;
   position: relative;
   z-index: 99;
-  
 }
 .spinner {
   transition: all 0.3s;
@@ -109,11 +104,9 @@ input[type="checkbox"] {
   box-sizing: border-box;
   position: fixed;
   width: 50px;
-   height:50px;
-    float: left; 
-    left: 10px; 
-   
-  
+  height: 50px;
+  float: left;
+  left: 10px;
 }
 
 .horizontal {
@@ -422,7 +415,7 @@ img {
   color: #fff;
 }
 
-.containeer{
+.containeer {
   background-color: white;
 }
 
@@ -467,22 +460,19 @@ img {
   line-height: 20px;
 }
 
-.projb{
-  font-size: 18px; 
+.projb {
+  font-size: 18px;
   background-color: white;
   color: black;
   border: none;
   outline: none;
-  cursor: pointer; 
+  cursor: pointer;
   border-radius: 5px;
-            
 }
-.projb:hover{
+.projb:hover {
   background-color: orangered;
   color: white;
 }
-
-
 
 * {
   box-sizing: border-box;
@@ -538,7 +528,6 @@ body {
     font-size: 11px;
   }
 }
-
 
 @media screen and (max-width: 360px) {
   .melnik909 {
@@ -728,11 +717,10 @@ body {
 /*form*/
 .container contact-form {
   background-color: -webkit-linear-gradient(left, #0072ff, #00c6ff);
-  
 }
 .contact-form {
   background: #fff;
-  
+
   margin-bottom: 0%;
   width: 70%;
 }
@@ -781,6 +769,22 @@ body {
 }
 
 @media screen and (max-width: 990px) {
+  #mainlogo {
+    float: right;
+    width: 10px;
+    height: 10px;
+  }
+  .survey-text {
+    font-size: 30px;
+  }
+  .no-view {
+    opacity: 0;
+  }
+
+  .survey-btn {
+    height: 20px;
+    width: 30px;
+  }
   #search-bar {
     width: 80%;
   }
@@ -812,8 +816,6 @@ body {
     margin-left: 0;
     width: 100%;
   }
-
-  
 }
 
 @media screen and (max-width: 424px) {
@@ -821,8 +823,6 @@ body {
     margin-left: 0;
     width: 100%;
   }
-
-  
 
   #search-bar {
     width: 100%;
@@ -843,7 +843,7 @@ body {
 .foot {
   text-decoration: none;
 }
-.cctvbox{
+.cctvbox {
   float: right;
 }
 #cctv {
@@ -852,24 +852,20 @@ body {
   cursor: pointer;
   margin-top: 11px;
   margin-right: 5px;
-  
 }
-#mainlogo{
-  width:180px;
-  height:80px;
+#mainlogo {
+  width: 180px;
+  height: 80px;
   margin-top: 10px;
-  
 }
 
-#srchbox{
-  width:270px;
+#srchbox {
+  width: 270px;
   position: absolute;
   right: 2px;
   display: none;
   z-index: 1; /* Stay on top */
-  
 }
-
 
 .surveytext {
   font-size: 25px;
@@ -880,7 +876,6 @@ body {
   color: white;
   cursor: pointer;
 }
-
 
 .surveybtn button {
   border: none;
@@ -911,83 +906,78 @@ body {
   margin-left: 50px;
 }
 
-@media all and (max-width:600px){
-  
-  .itemactive{
+@media all and (max-width: 600px) {
+  .itemactive {
     margin-top: -25px;
     position: relative;
-    background: url(../images/bans.jpg) no-repeat center;
+    background: url(../images/bannermodify.JPG) no-repeat center;
     background-attachment: fixed;
-    background-size:100% 100%;
+    background-size: 100% 100%;
     height: 665px;
     width: 100%;
     text-align: center;
   }
 
-
-#cctv{
-  width: 60px ; 
-  height: 60px;
-}
-#mainlogo{
-  width:190px;
-  height:80px;
-}
-#srchbox{
-  width:200px;
-  position: absolute;
-  margin-left: -150px;
-  margin-top: 25px;
-  display: none;
-  z-index: 1; /* Stay on top */
-  
-}
-.surveytext {
-  font-size: 10px;
-}
-.surveybtn button {
-  font-size: 10px;
-  border: none;
-  outline: none;
-  width: 100px;
-  height: 40px;
-  margin-top: -14px;
-  border-radius: 10px;
-  background-color: #fb6008;
-  color: white;
-}
-.takesurvey {
-  width: 100%;
-  height: 90px;
-  background-color: white;
-  color: black;
-  padding: 20px 5px;
-  text-align: center;
-}
-}
-
-@media all and (max-width:400px){
-  
-  #gear{
-    width: 40px ; 
-    height: 40px;
-  }
-  #cctv{
-    width: 60px ; 
+  #cctv {
+    width: 60px;
     height: 60px;
   }
-  #mainlogo{
-    width:150px;
-    height:70px;
+  #mainlogo {
+    width: 190px;
+    height: 80px;
   }
-  #srchbox{
-    width:200px;
+  #srchbox {
+    width: 200px;
     position: absolute;
     margin-left: -150px;
     margin-top: 25px;
     display: none;
     z-index: 1; /* Stay on top */
-    
+  }
+  .surveytext {
+    font-size: 10px;
+  }
+  .surveybtn button {
+    font-size: 10px;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 40px;
+    margin-top: -14px;
+    border-radius: 10px;
+    background-color: #fb6008;
+    color: white;
+  }
+  .takesurvey {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    color: black;
+    padding: 20px 5px;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 400px) {
+  #gear {
+    width: 40px;
+    height: 40px;
+  }
+  #cctv {
+    width: 60px;
+    height: 60px;
+  }
+  #mainlogo {
+    width: 150px;
+    height: 70px;
+  }
+  #srchbox {
+    width: 200px;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: 25px;
+    display: none;
+    z-index: 1; /* Stay on top */
   }
   .surveytext {
     font-size: 10px;
@@ -1011,20 +1001,18 @@ body {
     padding: 20px 5px;
     text-align: center;
   }
-  
 }
 
-@media all and (max-width:340px){
-  
-  #cctv{
-    width: 60px ; 
+@media all and (max-width: 340px) {
+  #cctv {
+    width: 60px;
     height: 60px;
   }
-  #mainlogo{
-    width:140px;
-    height:70px;
+  #mainlogo {
+    width: 140px;
+    height: 70px;
   }
-  
+
   .surveytext {
     font-size: 10px;
   }
@@ -1033,14 +1021,13 @@ body {
     border: none;
     outline: none;
     width: 90px;
-    height: 30px;
+    height: 50px;
     margin-top: -14px;
     border-radius: 10px;
     background-color: #fb6008;
     color: white;
   }
   .takesurvey {
-    
     width: 100%;
     height: 90px;
     background-color: white;
@@ -1048,22 +1035,15 @@ body {
     padding: 20px 5px;
     text-align: center;
   }
-  
 }
-
-
-
 
 /*  searchbar*/
 
-
-
-
-#content{
+#content {
   position: absolute;
- top: 120px;
- right: 1px;
-  transform: translate(-50%,-50%);
+  top: 120px;
+  right: 1px;
+  transform: translate(-50%, -50%);
   transition: all 1s;
   width: 50px;
   height: 50px;
@@ -1075,11 +1055,11 @@ body {
   display: none;
 }
 
-#texts{
+#texts {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;;
+  width: 100%;
   height: 42.5px;
   line-height: 30px;
   outline: 0;
@@ -1090,7 +1070,7 @@ body {
   padding: 0 20px;
 }
 
-#fas1{
+#fas1 {
   box-sizing: border-box;
   padding: 10px;
   width: 42.5px;
@@ -1105,21 +1085,19 @@ body {
   transition: all 1s;
 }
 
-#content:hover{
+#content:hover {
   width: 200px;
   cursor: pointer;
 }
 
-#content:hover input{
+#content:hover input {
   display: block;
 }
 
-#content:hover #fas1{
+#content:hover #fas1 {
   background: #07051a;
   color: white;
 }
-
-
 
 .containersrch {
   display: flex;
@@ -1129,7 +1107,6 @@ body {
   z-index: 1;
   width: 200px;
   margin-bottom: -25px;
-  
 }
 
 .search-form {
@@ -1141,7 +1118,6 @@ body {
 }
 
 .searchbox {
-
   width: 50px;
   height: 50px;
   font-size: 20px;
@@ -1149,7 +1125,7 @@ body {
   border: 3px solid white;
   border-radius: 50%;
   background: white;
- background-image: url("../images/sricb.png");
+  background-image: url("../images/sricb.png");
   background-size: 28px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1172,10 +1148,8 @@ body {
   box-shadow: 0 0 10px 0 #7f7f7f;
 }
 
-
-@media all and (max-width:450px){
-
-  .searchbox{
+@media all and (max-width: 450px) {
+  .searchbox {
     width: 40px;
     height: 44px;
   }
@@ -1186,7 +1160,6 @@ body {
     width: 200px;
     margin-bottom: -28px;
     right: 5px;
-    
   }
   .search-form {
     right: 5px;
@@ -1195,6 +1168,3 @@ body {
     width: 200px;
   }
 }
-
-
-
