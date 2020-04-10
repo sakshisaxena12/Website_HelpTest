@@ -3,6 +3,7 @@ html,
 body {
   overflow-x: hidden;
   height: 100%;
+  width: 100%;
 }
 body {
   padding: 0;
@@ -11,6 +12,7 @@ body {
   background: url(../images/banred.jpg) no-repeat center;
   background-attachment: fixed;
   background-size: 100% 100%;
+  width: 100%;
 }
 .fp {
   position: fixed;
@@ -29,6 +31,7 @@ body {
   background-color: black;
 }
 #sidebarMenu ul {
+  z-index: 1;
   margin-top: 60px;
 }
 .navbar-brand img {
@@ -41,11 +44,13 @@ body {
 }
 
 .sidebarMenuInner {
+  z-index: 1;
   margin: 0;
   padding: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 .sidebarMenuInner li {
+  z-index: 1;
   width: 100%;
   list-style: none;
   color: white;
@@ -56,11 +61,13 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .sidebarMenuInner li span {
+  z-index: 1;
   display: block;
   font-size: 14px;
   color: snow;
 }
 .sidebarMenuInner li a {
+  z-index: 1;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
@@ -70,7 +77,9 @@ body {
 input[type="checkbox"]:checked ~ #sidebarMenu {
   transform: translateX(0);
 }
-
+#carouselExampleIndicators{
+  z-index: 0;
+}
 .itemactive {
   top: -25px;
   position: relative;
@@ -480,6 +489,7 @@ img {
 body {
   font-family: Verdana, sans-serif;
   margin: 0;
+  width: 100%;
 }
 .mySlides {
   display: none;
