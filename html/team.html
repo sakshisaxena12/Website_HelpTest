@@ -26,24 +26,21 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    
-    <script async src="https://cse.google.com/cse.js?cx=000536282495068162456:uakw1drvjrv"></script>
+
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=000536282495068162456:uakw1drvjrv"
+    ></script>
   </head>
 
-
-  <body style="background: #fab1a0 !important" >
-   
-
+  <body style="background: #fab1a0 !important;">
     <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
 
     <label for="openSidebarMenu" class="sidebarIconToggle">
-      <img
-        id="gear"
-        src="../images/g1.PNG"
-      />
+      <img id="gear" src="../images/g1.PNG" alt="menu"/>
     </label>
 
-    <br>
+    <br />
 
     <div id="sidebarMenu">
       <ul class="sidebarMenuInner">
@@ -58,17 +55,18 @@
       </ul>
     </div>
     <div style="text-align: center;">
-      <img
+      <a href="/main"><img
         id="mainlogo"
         src="../images/lgwh.png"
-        style="margin-top: -20px;margin-left: 10px;"
-      />
+        alt="mainlogo"
+        style="margin-top: -20px; margin-left: 10px;"
+      /></a>
     </div>
 
     <!-- Team Section -->
 
     <div class="container-1" id="teaml" style="margin-top: 60px;">
-      <h1 style="color:black;text-align:center;"><u>OUR TEAM</u></h1>
+      <h1 style="color: black; text-align: center;"><u>OUR TEAM</u></h1>
       <br />
       <div class="row">
         <div class="col-md-12 profile text-center">
@@ -88,80 +86,46 @@
                               <a href="https://www.linkedin.com/in/iamshagun-gupta/" class="linkedin-btn"><i class="fa fa-linkedin"></i></a>
           --></div>
         </div>
-      
-  <div class="containersrch">
-    <form class="search-form" id="search-form"
-    action="javascript:void()"
-    onsubmit="if(this.t1.value!=null && this.t1.value!='')
-  parent.findString(this.t1.value);return false;"
-    >
-      <input type="text" class="searchbox" id="t1" autocomplete="off" />
-    </form>
-  </div>
 
+        <div class="containersrch">
+          <form
+            action="http://www.google.com/search"
+            method="get"
+            class="search-form"
+            id="search-form"
+          >
+            <input
+              type="text"
+              class="searchbox"
+              id="t1"
+              name="q"
+              autocomplete="off"
+            />
+          </form>
+        </div>
 
-  <script>
-    var TRange = null;
+        <script>
+          var form = document.querySelector("#search-form");
+          var searchbox = document.querySelector(".searchbox");
 
-    function findString(str) {
-      if (parseInt(navigator.appVersion) < 4) return;
-      var strFound;
-      if (window.find) {
-        // CODE FOR BROWSERS THAT SUPPORT window.find
+          // Allows you to submit when you press Enter
+          document.getElementById("t1").onkeydown = function (e) {
+            if (e.keyCode == 13) {
+              // submit
+            }
+          };
 
-        strFound = self.find(str);
-        if (!strFound) {
-          strFound = self.find(str, 0, 1);
-          while (self.find(str, 0, 1)) continue;
-        }
-      } else if (navigator.appName.indexOf("Microsoft") != -1) {
-        // EXPLORER-SPECIFIC CODE
+          // Adds the placeholder when the searchbox is in focus
+          searchbox.addEventListener("focus", function (e) {
+            searchbox.setAttribute("placeholder", "Search...");
+          });
 
-        if (TRange != null) {
-          TRange.collapse(false);
-          strFound = TRange.findText(str);
-          if (strFound) TRange.select();
-        }
-        if (TRange == null || strFound == 0) {
-          TRange = self.document.body.createTextRange();
-          strFound = TRange.findText(str);
-          if (strFound) TRange.select();
-        }
-      } else if (navigator.appName == "Opera") {
-        alert("Opera browsers not supported, sorry...");
-        return;
-      }
-      if (!strFound) alert("String '" + str + "' not found!");
-      return;
-    }
-  </script>
-  
-
-  <script>
-    var form = document.querySelector("#search-form");
-    var searchbox = document.querySelector(".searchbox");
-
-    // Allows you to submit when you press Enter
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-     
-    });
-
-    // Adds the placeholder when the searchbox is in focus
-    searchbox.addEventListener("focus", function (e) {
-      searchbox.setAttribute("placeholder", "Search...");
-    });
-
-    // Removes Text and the placeholder when the search box is out of focus
-    searchbox.addEventListener("focusout", function (e) {
-      searchbox.value = null;
-      searchbox.removeAttribute("placeholder");
-    });
-  </script>
-
-
-
-
+          // Removes Text and the placeholder when the search box is out of focus
+          searchbox.addEventListener("focusout", function (e) {
+            searchbox.value = null;
+            searchbox.removeAttribute("placeholder");
+          });
+        </script>
 
         <div class="col-md-3 profile text-center">
           <div class="box">
@@ -180,7 +144,6 @@
                               <a href="https://www.linkedin.com/in/iamshagun-gupta/" class="fa fa-linkedin"></a>-->
           </div>
         </div>
-      
       </div>
     </div>
     <br />
@@ -189,124 +152,121 @@
 
     <!--START FOOTER-->
     <footer
-    class="full-footer"
-    style="border-top-color:black;width:100%;  border:solid"
-  >
-    <div class="container topFooter p-md-3 p-4">
-      <div class="row">
-        <div class="col-md-3">
-          <h5 style="color: white">HELPING HANDS</h5>
+      class="full-footer"
+      style="border-top-color: black; width: 100%; border: solid;"
+    >
+      <div class="container topFooter p-md-3 p-4">
+        <div class="row">
+          <div class="col-md-3">
+            <h5 style="color: white;">HELPING HANDS</h5>
 
-          <p>
-            Helping Hands is a Research based Platform / Blog / Medium for
-            anyone,anytime and anywhere.
-          </p>
-          <br />
-          <br />
-          <a
-            style="color: orangered;"
-            class="p-2"
-            href="https://www.facebook.com/helpinghands4world/"
-            ><i class="fab fa-2x fa-facebook-square"></i
-          ></a>
-          <a
-            style="color: orangered;"
-            class="p-2"
-            href="https://www.instagram.com/we_r_helping_hands"
-            ><i class="fab fa-2x fa-instagram"></i
-          ></a>
-          <a
-            style="color: orangered;"
-            class="p-2"
-            href="https://www.linkedin.com/company/we-r-helping-hands"
-            ><i class="fab fa-2x fa-linkedin-in"></i
-          ></a>
-          <a style="color: orangered;" class="p-2" href="tel:+917906980871"
-            ><i class="fab fa-2x fa-whatsapp"></i
-          ></a>
-          <br>
-          <br>
-        </div>
-        &#32;
-        
+            <p>
+              Helping Hands is a Research based Platform / Blog / Medium for
+              anyone,anytime and anywhere.
+            </p>
+            <br />
+            <br />
+            <a
+              style="color: orangered;"
+              class="p-2"
+              href="https://www.facebook.com/helpinghands4world/"
+              ><i class="fab fa-2x fa-facebook-square"></i
+            ></a>
+            <a
+              style="color: orangered;"
+              class="p-2"
+              href="https://www.instagram.com/we_r_helping_hands"
+              ><i class="fab fa-2x fa-instagram"></i
+            ></a>
+            <a
+              style="color: orangered;"
+              class="p-2"
+              href="https://www.linkedin.com/company/we-r-helping-hands"
+              ><i class="fab fa-2x fa-linkedin-in"></i
+            ></a>
+            <a style="color: orangered;" class="p-2" href="tel:+917906980871"
+              ><i class="fab fa-2x fa-whatsapp"></i
+            ></a>
+            <br />
+            <br />
+          </div>
+          &#32;
 
-        <div class="col-md-3">
-          <h5 style="color:white;">Important Links</h5>
-          <a class="p-1" href="login.html">Accounts</a><br />
-          <a class="p-1" href="blogs.html">Blog Articles</a><br />
-          <a class="p-1" href="social-contact.html">Social Media</a><br />
-          <br>
-        
-        </div>
+          <div class="col-md-3">
+            <h5 style="color: white;">Important Links</h5>
+            <a class="p-1" href="login.html">Accounts</a><br />
+            <a class="p-1" href="blogs.html">Blog Articles</a><br />
+            <a class="p-1" href="social-contact.html">Social Media</a><br />
+            <br />
+          </div>
 
+          <div class="col-md-3">
+            <h5 style="color: white;">Our Services</h5>
 
-        <div class="col-md-3">
-          <h5 style="color: white;">Our Services</h5>
-
-          <a class="p-1" href="/projects">Projects</a><br />
-          <a class="p-1" href="/surveys">Surveys</a><br />
-          <br />
-          <h5 style="color: white">Available in:</h5>
-          <a class="p-1" style="color: orangered" href="#"
-            ><i class="fab fa-2x fa-android"></i
-          ></a>
-          <a class="p-1" style="color: orangered" href="#"
-            ><i class="fab fa-2x fa-apple"></i
-          ></a>
-          <br>
-          <br>
-        </div>
-        <div class="col-md-3">
-          <h5 style="color:white;">Contact Us</h5>
-          <a href="tel:+917906980871" >
-            <i class="fas fa-phone" style="color: orangered !important;" ></i> +(91) 7906980871</a
-          >
-          <br />
-          <a href="mailto:werrhelpinghands@gmail.com" 
-            ><i class="fas fa-envelope" style="color: orangered !important;"></i> werrhelpinghands@gmail.com</a
-          ><br />
-          <br>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe
-              class="embed-responsive-item"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448181.16374162206!2d76.81306442366603!3d28.647279935570428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1561834027057!5m2!1sen!2sin"
-              frameborder="10px"
-              frameborder="0"
-              style="border:0"
-              allowfullscreen
-            ></iframe>
+            <a class="p-1" href="/projects">Projects</a><br />
+            <a class="p-1" href="/surveys">Surveys</a><br />
+            <br />
+            <h5 style="color: white;">Available in:</h5>
+            <a class="p-1" style="color: orangered;" href="#"
+              ><i class="fab fa-2x fa-android"></i
+            ></a>
+            <a class="p-1" style="color: orangered;" href="#"
+              ><i class="fab fa-2x fa-apple"></i
+            ></a>
+            <br />
+            <br />
+          </div>
+          <div class="col-md-3">
+            <h5 style="color: white;">Contact Us</h5>
+            <a href="tel:+917906980871">
+              <i class="fas fa-phone" style="color: orangered !important;"></i>
+              +(91) 7906980871</a
+            >
+            <br />
+            <a href="mailto:werrhelpinghands@gmail.com"
+              ><i
+                class="fas fa-envelope"
+                style="color: orangered !important;"
+              ></i>
+              werrhelpinghands@gmail.com</a
+            ><br />
+            <br />
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448181.16374162206!2d76.81306442366603!3d28.647279935570428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1561834027057!5m2!1sen!2sin"
+                frameborder="10px"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container-fluid bottomFooter" style="background-color: grey;">
-      <div class="row">
-        <div class="col-12 text-center pt-2">
-          <p class="foot" style="font-size: 12px; font-weight: 600px;">
-            Copyrights @ Helping Hands 2020 - All Rights Reserved
-          </p>
+      <div class="container-fluid bottomFooter" style="background-color: grey;">
+        <div class="row">
+          <div class="col-12 text-center pt-2">
+            <p class="foot" style="font-size: 12px; font-weight: 600px;">
+              Copyrights @ Helping Hands 2020 - All Rights Reserved
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
     <script>
-      function myf(){
-        var x=document.getElementById("srchbox");
-        if (x.style.display === "none")
-        {
-          x.style.display="block";
-      
+      function myf() {
+        var x = document.getElementById("srchbox");
+        if (x.style.display === "none") {
+          x.style.display = "block";
         } else {
-          x.style.display="none";
+          x.style.display = "none";
         }
-      
       }
-      
-        </script>
-      
-   
+    </script>
+
     <!--END FOOTER-->
 
     <script src="../javascript/index.js"></script>

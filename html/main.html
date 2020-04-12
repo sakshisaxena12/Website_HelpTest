@@ -30,25 +30,26 @@
   <body>
     
 
-   <nav>
+   <nav class="navbar2">
     <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
     <label for="openSidebarMenu" class="sidebarIconToggle">
       <img
         id="gear"
         src="../images/g1.PNG"
+        alt="menu"
       />
     </label>
 
     <div id="sidebarMenu">
       <ul class="sidebarMenuInner">
-        <li><a href="/main">Home</a></li>
-        <li><a href="/#about">About us</a></li>
-        <li><a href="#contact-us">Contact us</a></li>
-        <li><a href="/projects"> Projects</a></li>
-        <li><a href="/surveys">Surveys</a></li>
-        <li><a href="/jobs">Jobs</a></li>
-        <li><a href="/career">Career</a></li>
-        <li><a href="/team">Our Team</a></li>
+        <li><a href="/main"><i class="fas fa-wrench">&nbsp;Home </i></a></li>
+        <li><a href="/#about"><i class="fas fa-wrench">&nbsp;About us </i></a></li>
+        <li><a href="#contact-us"><i class="fas fa-wrench">&nbsp;Contact us </i></a></li>
+        <li><a href="/projects"><i class="fas fa-wrench">&nbsp; Projects </i></a></li>
+        <li><a href="/surveys"><i class="fas fa-wrench">&nbsp;Surveys </i></a></li>
+        <li><a href="/jobs"><i class="fas fa-wrench">&nbsp;Jobs </a></i></li>
+        <li><a href="/career"><i class="fas fa-wrench">&nbsp;Career </i></a></li>
+        <li><a href="/team"><i class="fas fa-wrench">&nbsp;Our Team </i></a></li>
       </ul>
     </div>
   </nav>
@@ -57,10 +58,11 @@
       style="font-size:30px;"
     >
     
-    <img
+    <a href="/main"><img
     id="mainlogo"
-    src="../images/lgwh.png"\
-  />
+    src="../images/lgwh.png"
+    alt="main-logo"
+  /></a>
   
   
   
@@ -144,75 +146,37 @@
           </div>
           <!----------------------------->
           
-    <div class="containersrch">
-      <form class="search-form" id="search-form"
-      action="javascript:void()"
-      onsubmit="if(this.t1.value!=null && this.t1.value!='')
-    parent.findString(this.t1.value);return false;"
-      >
-        <input type="text" class="searchbox" id="t1" autocomplete="off" />
-      </form>
-    </div>
-
-
-    <script>
-      var TRange = null;
-
-      function findString(str) {
-        if (parseInt(navigator.appVersion) < 4) return;
-        var strFound;
-        if (window.find) {
-          // CODE FOR BROWSERS THAT SUPPORT window.find
-
-          strFound = self.find(str);
-          if (!strFound) {
-            strFound = self.find(str, 0, 1);
-            while (self.find(str, 0, 1)) continue;
-          }
-        } else if (navigator.appName.indexOf("Microsoft") != -1) {
-          // EXPLORER-SPECIFIC CODE
-
-          if (TRange != null) {
-            TRange.collapse(false);
-            strFound = TRange.findText(str);
-            if (strFound) TRange.select();
-          }
-          if (TRange == null || strFound == 0) {
-            TRange = self.document.body.createTextRange();
-            strFound = TRange.findText(str);
-            if (strFound) TRange.select();
-          }
-        } else if (navigator.appName == "Opera") {
-          alert("Opera browsers not supported, sorry...");
-          return;
-        }
-        if (!strFound) alert("String '" + str + "' not found!");
-        return;
-      }
-    </script>
-    
-
-    <script>
-      var form = document.querySelector("#search-form");
-      var searchbox = document.querySelector(".searchbox");
-
-      // Allows you to submit when you press Enter
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-       
-      });
-
-      // Adds the placeholder when the searchbox is in focus
-      searchbox.addEventListener("focus", function (e) {
-        searchbox.setAttribute("placeholder", "Search...");
-      });
-
-      // Removes Text and the placeholder when the search box is out of focus
-      searchbox.addEventListener("focusout", function (e) {
-        searchbox.value = null;
-        searchbox.removeAttribute("placeholder");
-      });
-    </script>
+          <div class="containersrch">
+            <form action="http://www.google.com/search" method="get" class="search-form" id="search-form" >
+              <input type="text" class="searchbox" id="t1" name="q" autocomplete="off" />
+            </form>
+          </div>
+      
+      
+         
+      
+          <script>
+            var form = document.querySelector("#search-form");
+            var searchbox = document.querySelector(".searchbox");
+      
+            // Allows you to submit when you press Enter
+            document.getElementById('t1').onkeydown = function(e){
+         if(e.keyCode == 13){
+           // submit
+         }
+      };
+      
+            // Adds the placeholder when the searchbox is in focus
+            searchbox.addEventListener("focus", function (e) {
+              searchbox.setAttribute("placeholder", "Search...");
+            });
+      
+            // Removes Text and the placeholder when the search box is out of focus
+            searchbox.addEventListener("focusout", function (e) {
+              searchbox.value = null;
+              searchbox.removeAttribute("placeholder");
+            });
+          </script>
           
                     <div class="container" style="width: 470px;height: 390px;">
                         <div id="carouselExampleIndicators" class="carousel slide carousel-fade " data-ride="carousel">
@@ -226,13 +190,13 @@
                                     <img src="../images/1.jpg" class="d-block w-70" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../images/2.jpg" class="d-block w-70" alt="...">
+                                    <img src="../images/2.jpg" class="d-block w-70" alt="sliderimg">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../images/3.jpg" class="d-block w-70" alt="...">
+                                    <img src="../images/3.jpg" class="d-block w-70" alt="sliderimg>
                                 </div>
                                 <div class="carousel-item">
-                                   <img src="../images/4.jpg" class="d-block w-70" alt="...">
+                                   <img src="../images/4.jpg" class="d-block w-70" alt="sliderimg">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"

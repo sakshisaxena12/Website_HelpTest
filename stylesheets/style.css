@@ -9,10 +9,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Varela Round", sans-serif;
-  background: url(../images/banred.jpg) no-repeat center;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  width: 100%;
+    width: 100%;
 }
 .fp {
   position: fixed;
@@ -50,29 +47,39 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 .sidebarMenuInner li {
-  z-index: 1;
   width: 100%;
   list-style: none;
-  color: white;
   text-transform: uppercase;
   font-weight: bold;
   padding: 20px;
   cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+
 .sidebarMenuInner li span {
-  z-index: 1;
   display: block;
   font-size: 14px;
-  color: snow;
+  color: black;
 }
 .sidebarMenuInner li a {
-  z-index: 1;
+  width: 800px;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
+}
+
+.sidebarMenuInner li:hover > a{
+  background-color: white;
+  color: #000;
+}
+.sidebarMenuInner li:hover{
+  background-color: white;
+}
+.navbar2{
+  position: absolute;
 }
 input[type="checkbox"]:checked ~ #sidebarMenu {
   transform: translateX(0);
@@ -81,10 +88,11 @@ input[type="checkbox"]:checked ~ #sidebarMenu {
   z-index: 0;
 }
 .itemactive {
-  top: -25px;
   position: relative;
   height: 548px;
   width: 100%;
+  background: url(../images/banred.jpg);
+  background-size: 100% 100%;
   text-align: center;
 }
 
@@ -895,20 +903,14 @@ body {
 }
 
 @media all and (max-width: 600px) {
-  body {
-    padding: 0;
-    margin: 0;
-    font-family: "Varela Round", sans-serif;
-    background: url(../images/banmob2.png) no-repeat center;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-  }
+ 
   .itemactive {
-    top: -25px;
     position: relative;
-    height: 665px;
+    height: 675px;
     width: 100%;
     text-align: center;
+    background: url(../images/banmob2.png) no-repeat ;
+    background-size: 100% 100%;
   }
 
   #cctv {
@@ -920,6 +922,7 @@ body {
     float: right;
     width: 160px;
     height: 70px;
+    margin-right: 20px;
   }
   #srchbox {
     width: 200px;
@@ -930,13 +933,13 @@ body {
     z-index: 1; /* Stay on top */
   }
   .surveytext {
-    font-size: 14px;
+    font-size: 16px;
   }
   .surveybtn button {
-    font-size: 10px;
+    font-size: 13px;
     border: none;
     outline: none;
-    width: 100px;
+    width: 130px;
     height: 40px;
     border-radius: 10px;
     background-color: #fb6008;
@@ -944,7 +947,7 @@ body {
   }
   .takesurvey {
     width: 100%;
-    height: 60px;
+    height: 70px;
     background-color: white;
     color: black;
     padding: 20px 5px;
@@ -969,8 +972,8 @@ body {
     height: 60px;
   }
   #mainlogo {
-    width: 150px;
-    height: 70px;
+    width: 110px;
+    height: 40px;
   }
   #srchbox {
     width: 200px;
@@ -988,8 +991,8 @@ body {
     height: 60px;
   }
   #mainlogo {
-    width: 140px;
-    height: 60px;
+    width: 110px;
+    height: 40px;
   }
 }
 
