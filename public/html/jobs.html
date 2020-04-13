@@ -36,7 +36,7 @@
   <body style="background: #c7ecee !important;">
     <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
     <label for="openSidebarMenu" class="sidebarIconToggle">
-      <img id="gear" src="../images/g1.PNG" />
+      <img id="gear" src="../images/g1.PNG" alt="menu" />
     </label>
 
     <div id="sidebarMenu">
@@ -55,62 +55,24 @@
     
 
     <div class="containersrch">
-      <form class="search-form" id="search-form"
-      action="javascript:void()"
-      onsubmit="if(this.t1.value!=null && this.t1.value!='')
-    parent.findString(this.t1.value);return false;"
-      >
-        <input type="text" class="searchbox" id="t1" autocomplete="off" />
+      <form action="/results" method="get" class="search-form" id="search-form">
+        <input type="text" class="searchbox" id="t1" name="q" autocomplete="off" />
       </form>
     </div>
 
 
-    <script>
-      var TRange = null;
-
-      function findString(str) {
-        if (parseInt(navigator.appVersion) < 4) return;
-        var strFound;
-        if (window.find) {
-          // CODE FOR BROWSERS THAT SUPPORT window.find
-
-          strFound = self.find(str);
-          if (!strFound) {
-            strFound = self.find(str, 0, 1);
-            while (self.find(str, 0, 1)) continue;
-          }
-        } else if (navigator.appName.indexOf("Microsoft") != -1) {
-          // EXPLORER-SPECIFIC CODE
-
-          if (TRange != null) {
-            TRange.collapse(false);
-            strFound = TRange.findText(str);
-            if (strFound) TRange.select();
-          }
-          if (TRange == null || strFound == 0) {
-            TRange = self.document.body.createTextRange();
-            strFound = TRange.findText(str);
-            if (strFound) TRange.select();
-          }
-        } else if (navigator.appName == "Opera") {
-          alert("Opera browsers not supported, sorry...");
-          return;
-        }
-        if (!strFound) alert("String '" + str + "' not found!");
-        return;
-      }
-    </script>
-    
+   
 
     <script>
       var form = document.querySelector("#search-form");
       var searchbox = document.querySelector(".searchbox");
 
       // Allows you to submit when you press Enter
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-       
-      });
+      document.getElementById('t1').onkeydown = function(e){
+   if(e.keyCode == 13){
+     // submit
+   }
+};
 
       // Adds the placeholder when the searchbox is in focus
       searchbox.addEventListener("focus", function (e) {
@@ -127,16 +89,17 @@
     <!------------------------------------------------------------------------------------->
 
     <div style="text-align: center;">
-      <img
+      <a href="/main"><img
         id="mainlogo"
         src="../images/lgwh.png"
+        alt="mainlogo"
         style="margin-top: -20px; margin-left: 10px;"
-      />
+      /></a>
     </div>
     <div class="text-center" style="margin-top: 60px;">
       <h3>LATEST UPCOMING JOBS/INTERNSHIPS...</h3>
       <br />
-      <img src="../images/job.jpg " style="width: 500px; height: 300px;" />
+      <img src="../images/job.jpg "  alt="jobsimage" style="width: 500px; height: 300px;" />
     </div>
     <br />
     
