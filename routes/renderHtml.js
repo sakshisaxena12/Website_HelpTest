@@ -8,14 +8,7 @@ renderHtml.route("*").get((req, res) => {
   if (req.url == "/") fileUrl = "/main";
   else fileUrl = req.url;
 
-  if (fileUrl.includes("?")) {
-    fileUrl = fileUrl.split("?")[0]
-    let filePath = path.resolve("./public/html" + fileUrl + ".html");
-    res.statusCode = 200;
-    res.setHeader("Content-Type", "text/html");
-    fs.createReadStream(filePath).pipe(res);
-    return
-  }
+  if (fileUrl.includes("?")) fileUrl = fileUrl.split("?")[0];
 
   let filePath = path.resolve("./public/html/" + fileUrl + ".html");
   const ext = path.extname(filePath);

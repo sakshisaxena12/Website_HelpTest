@@ -28,14 +28,14 @@
 
     <div id="sidebarMenu">
       <ul class="sidebarMenuInner">
-        <li><a href="/main"><i class="fas fa-wrench">&nbsp;Home </i></a></li>
-        <li><a href="/#about"><i class="fas fa-wrench">&nbsp;About us </i></a></li>
-        <li><a href="#contact-us"><i class="fas fa-wrench">&nbsp;Contact us </i></a></li>
-        <li><a href="/projects"><i class="fas fa-wrench">&nbsp; Projects </i></a></li>
-        <li><a href="/surveys"><i class="fas fa-wrench">&nbsp;Surveys </i></a></li>
-        <li><a href="/jobs"><i class="fas fa-wrench">&nbsp;Jobs </a></i></li>
-        <li><a href="/career"><i class="fas fa-wrench">&nbsp;Career </i></a></li>
-        <li><a href="/team"><i class="fas fa-wrench">&nbsp;Our Team </i></a></li>
+        <li><a href="/main"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;Home </i></a></li>
+        <li><a href="/#about"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;About us </i></a></li>
+        <li><a href="#contact-us"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;Contact us </i></a></li>
+        <li><a href="/projects"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;Projects </i></a></li>
+        <li><a href="/surveys"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;Surveys </i></a></li>
+        <li><a href="/jobs"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;Jobs</a></i></li>
+        <li><a href="/career"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;Career </i></a></li>
+        <li><a href="/team"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;Our Team </i></a></li>
       </ul>
     </div>
   </nav>
@@ -113,37 +113,12 @@
         </div>
         <!----------------------------->
 
-        <div class="containersrch">
-          <form action="/results" method="get" class="search-form" id="search-form">
-            <input type="text" class="searchbox" id="t1" name="q" autocomplete="off" />
-          </form>
-        </div>
-
-
-
-
-        <script>
-          var form = document.querySelector("#search-form");
-          var searchbox = document.querySelector(".searchbox");
-
-          // Allows you to submit when you press Enter
-          document.getElementById('t1').onkeydown = function (e) {
-            if (e.keyCode == 13) {
-              // submit
-            }
-          };
-
-          // Adds the placeholder when the searchbox is in focus
-          searchbox.addEventListener("focus", function (e) {
-            searchbox.setAttribute("placeholder", "Search...");
-          });
-
-          // Removes Text and the placeholder when the search box is out of focus
-          searchbox.addEventListener("focusout", function (e) {
-            searchbox.value = null;
-            searchbox.removeAttribute("placeholder");
-          });
-        </script>
+        <form action="/results" method="get" class="search-bar" >
+          <input type="text" class="textbox" name="q" autocomplete="off" placeholder="type here..."/>
+          <a class = "search-btn" href="#">
+            
+          </a></form>
+        
 
         <div class="container" style="width: 470px;height: 390px;">
           <div id="carouselExampleIndicators" class="carousel slide carousel-fade " data-ride="carousel">
