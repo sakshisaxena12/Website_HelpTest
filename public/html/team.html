@@ -37,7 +37,7 @@
     <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
 
     <label for="openSidebarMenu" class="sidebarIconToggle">
-      <img id="gear" src="../images/g1.PNG" alt="menu"/>
+      <img id="gear" src="../images/g1.PNG" alt="menu" />
     </label>
 
     <br />
@@ -55,21 +55,22 @@
       </ul>
     </div>
     <div style="text-align: center;">
-      <a href="/main"><img
-        id="mainlogo"
-        src="../images/lgwh.png"
-        alt="mainlogo"
-        style="margin-top: -20px; margin-left: 10px;"
+      <a href="/main"
+        ><img
+          id="mainlogo"
+          src="../images/lgwh.png"
+          alt="mainlogo"
+          style="margin-top: -20px; margin-left: 10px;"
       /></a>
     </div>
 
     <!-- Team Section -->
-
     <div class="container-1" id="teaml" style="margin-top: 60px;">
       <h1 style="color: black; text-align: center;"><u>OUR TEAM</u></h1>
       <br />
+      <br />
       <div class="row">
-        <div class="col-md-12 profile text-center">
+        <div class="col-md-6 profile text-center">
           <div class="box">
             <img
               src="../images/shagun3.jpeg"
@@ -86,11 +87,7 @@
                               <a href="https://www.linkedin.com/in/iamshagun-gupta/" class="linkedin-btn"><i class="fa fa-linkedin"></i></a>
           --></div>
         </div>
-
-        
-        
-
-        <div class="col-md-3 profile text-center">
+        <div class="col-md-6 profile text-center">
           <div class="box">
             <img
               src="../images/sakshi.jpeg"
@@ -112,11 +109,18 @@
     <br />
     <br />
     <!-- Team Section End -->
-    <form action="/results" method="get" class="search-bar" >
-      <input type="text" class="textbox" name="q" autocomplete="off" placeholder="type here..."/>
-      <a class = "search-btn" href="#">
-        
-      </a></form>
+    <div>
+      <form action="/results" method="get" class="search-bar">
+        <input
+          type="text"
+          class="textbox"
+          name="q"
+          autocomplete="off"
+          placeholder="type here..."
+        />
+        <button type="submit" class="search-btn"></button>
+      </form>
+    </div>
     <!--START FOOTER-->
     <footer
       class="full-footer"

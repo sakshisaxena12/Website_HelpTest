@@ -1033,6 +1033,8 @@ body {
 }
 
 .search-btn {
+  border: none;
+  outline: none;
   border-radius: 30px;
   background-image: url("../images/sricb.png");
   background-size: 28px;
