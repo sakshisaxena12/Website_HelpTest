@@ -9,7 +9,18 @@ function submitForm() {
   frm.reset(); // Reset all form data
   return false;
 }
-var slideIndex = 0;
+function myFunction() {
+  let page = document.body.scrollTop;
+  if (page >= 450) {
+    document.querySelector(".itemactive").classList.add("scroll");
+  } else {
+    document.querySelector(".itemactive").classList.remove("scroll");
+  }
+}
+setInterval(() => {
+  window.addEventListener("scroll", myFunction());
+}, 100);
+/*var slideIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -25,3 +36,4 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+console.log("s");*/
