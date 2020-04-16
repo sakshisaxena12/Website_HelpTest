@@ -46,7 +46,9 @@ body {
   padding: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .sidebarMenuInner li {
+  text-decoration: none;
   width: 100%;
   list-style: none;
   text-transform: uppercase;
@@ -55,31 +57,27 @@ body {
   cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
-.sidebarMenuInner li span {
-  display: block;
-  font-size: 14px;
-  color: black;
-}
-.sidebarMenuInner li a {
+.sidebarMenuInner a {
   width: 800px;
-  color: white;
+  color: white !important;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .sidebarMenuInner li:hover > a {
   background-color: white;
-  color: #000;
+  color: #000 !important;
 }
 .sidebarMenuInner li:hover {
   background-color: white;
+  color: #000;
 }
 .navbar2 {
   position: absolute;
 }
+
 input[type="checkbox"]:checked ~ #sidebarMenu {
   transform: translateX(0);
 }
@@ -1082,7 +1080,7 @@ body {
 .visitor{
   width: 100%;
   height: 30px;
-  background-color: rgb(39, 39, 39);
+  background-color: grey;
 
 }
 .visitor h6{
