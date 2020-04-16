@@ -33,37 +33,36 @@
   <body style="background: #c7ecee !important">
     
       <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
-<label  for="openSidebarMenu" class="sidebarIconToggle">
-   <img
-        id="gear"
-        src="../images/g1.PNG"
-        alt="menu"
-      />
-</label>
-
-    <div id="sidebarMenu">
-       <ul class="sidebarMenuInner">
-        <li><a href="/main">Home</a></li>
-        <li><a href="/#about">About us</a></li>
-        <li><a href="/#contact-us">Contact us</a></li>
-        <li><a href="/projects"> Projects</a></li>
-        <li><a href="/surveys">Surveys</a></li>
-        <li><a href="/jobs">Jobs</a></li>
-        <li><a href="/career">Career</a></li>
-        <li><a href="/team">Our Team</a></li>
-      </ul>
-    </div>
+      <nav class="navbar2">
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+         
+          <img id="gear" src="../images/g1.png" alt="menu" />
+        </label>
     
-      
-    <div style="text-align: center;">
-      <a href="/main"><img
-        id="mainlogo"
-        src="../images/lgwh.png"
-        alt="maiblogo"
-        style="margin-top: -20px;margin-left: 10px;"
-      /></a>
+        <div id="sidebarMenu">
+          <ul class="sidebarMenuInner">
+            <li><a href="/main"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;Home </i></a></li>
+            <li><a href="/#about"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;About us </i></a></li>
+            <li><a href="#contact-us"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;Contact us </i></a></li>
+            <li><a href="/projects"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;Projects </i></a></li>
+            <li><a href="/surveys"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;Surveys </i></a></li>
+            <li><a href="/jobs"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;Jobs</a></i></li>
+            <li><a href="/career"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;Career </i></a></li>
+            <li><a href="/team"><i class="fas fa-wrench">&nbsp;&nbsp;&nbsp;Our Team </i></a></li>
+          </ul>
+        </div>
+      </nav>
+      <div >
+      <div class="itemactive" style="font-size:30px;">
+    
+        <a href="/main"><img id="mainlogo" src="../images/lgwh.png" alt="main-logo" /></a>
+    
+    
+    
+      </div>
     </div>
-    <div class="text-center" style="margin-top: 60px;">
+    <div class="text-center" style="margin-top: 80px;">
       <h3 style="text-decoration:underline">Career Options:</h3>
 <br>
       <span>
@@ -79,133 +78,87 @@
     <br />
    
     <!--Footer-->
-    <footer
-    class="full-footer"
-    style="border-top-color:black;width:100%;  border:solid"
-  >
-    <div class="container topFooter p-md-3 p-4">
-      <div class="row">
-        <div class="col-md-3">
-          <h5 style="color: white">HELPING HANDS</h5>
-
-          <p>
-            Helping Hands is a Research based Platform / Blog / Medium for
-            anyone,anytime and anywhere.
-          </p>
-          <br />
-          <br />
-          <a
-            style="color: orangered;"
-            class="p-2"
-            href="https://www.facebook.com/helpinghands4world/"
-            ><i class="fab fa-2x fa-facebook-square"></i
-          ></a>
-          <a
-            style="color: orangered;"
-            class="p-2"
-            href="https://www.instagram.com/we_r_helping_hands"
-            ><i class="fab fa-2x fa-instagram"></i
-          ></a>
-          <a
-            style="color: orangered;"
-            class="p-2"
-            href="https://www.linkedin.com/company/we-r-helping-hands"
-            ><i class="fab fa-2x fa-linkedin-in"></i
-          ></a>
-          <a style="color: orangered;" class="p-2" href="tel:+917906980871"
-            ><i class="fab fa-2x fa-whatsapp"></i
-          ></a>
-          <br>
-          <br>
-        </div>
-        &#32;
-        
-
-        <div class="col-md-3">
-          <h5 style="color:white;">Important Links</h5>
-          <a class="p-1" href="login.html">Accounts</a><br />
-          <a class="p-1" href="blogs.html">Blog Articles</a><br />
-          <a class="p-1" href="social-contact.html">Social Media</a><br />
-          <br>
-        
-        </div>
-
-        
-        <script>
-          function buttonState() {
-            var button = document.getElementById("sb")
-            var text = document.getElementById("search-txt")
-            console.log(text.value);
-      
-            if (!text.value == "") {
-              button.disabled = false
-            } else {
-              button.disabled = true
-            }
-          }
-        </script>
-      
-        <div>
-          <form action="/results" method="get" class="search-bar">
-            <input id="search-txt" type="text" onkeyup="buttonState()" class="textbox" name="q" autocomplete="off"
-              placeholder="type here...">
-            <button id="sb" disabled="true" type="submit" class="search-btn">
-            </button>
-          </form>
-        </div>
-        
-    
-
-        <div class="col-md-3">
-          <h5 style="color: white;">Our Services</h5>
-
-          <a class="p-1" href="/projects">Projects</a><br />
-          <a class="p-1" href="/surveys">Surveys</a><br />
-          <br />
-          <h5 style="color: white">Available in:</h5>
-          <a class="p-1" style="color: orangered" href="#"
-            ><i class="fab fa-2x fa-android"></i
-          ></a>
-          <a class="p-1" style="color: orangered" href="#"
-            ><i class="fab fa-2x fa-apple"></i
-          ></a>
-          <br>
-          <br>
-        </div>
-        <div class="col-md-3">
-          <h5 style="color:white;">Contact Us</h5>
-          <a href="tel:+917906980871" >
-            <i class="fas fa-phone" style="color: orangered !important;" ></i> +(91) 7906980871</a
-          >
-          <br />
-          <a href="mailto:werrhelpinghands@gmail.com" 
-            ><i class="fas fa-envelope" style="color: orangered !important;"></i> werrhelpinghands@gmail.com</a
-          ><br />
-          <br>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe
-              class="embed-responsive-item"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448181.16374162206!2d76.81306442366603!3d28.647279935570428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1561834027057!5m2!1sen!2sin"
-              frameborder="10px"
-              frameborder="0"
-              style="border:0"
-              allowfullscreen
-            ></iframe>
+    <footer class="full-footer" style="border-top-color:black;width:100%;  border:solid">
+      <div class="container topFooter p-md-3 p-4">
+        <div class="row">
+          <div class="col-md-3">
+            <h5 style="color: white">HELPING HANDS</h5>
+  
+            <p>
+              Helping Hands is a Research based Platform / Blog / Medium for
+              anyone,anytime and anywhere.
+            </p>
+            <br />
+            <br />
+            <a  class="p-2" href="https://www.facebook.com/helpinghands4world/">
+              <img src="../images/facebook.png" class="logo-icon" alt="facebook"></a>
+            <a  class="p-2" href="https://www.instagram.com/we_r_helping_hands">
+              <img src="../images/instagram.png" class="logo-icon" alt="icon-instagram"></a>
+            <a  class="p-2" href="https://www.linkedin.com/company/we-r-helping-hands">
+              <img src="../images/linkedin.png" class="logo-icon" alt="icon-linkedin"></a>
+            <a  class="p-2" href="tel:+917906980871">
+              <img src="../images/whatsapp.png" class="logo-icon" alt="icon-whatsapp"></i></a>
+            <br>
+            <br>
+          </div>
+          &#32;
+  
+  
+          <div class="col-md-3">
+            <h5 style="color:white;">Important Links</h5>
+            <a class="p-1" href="login.html">Accounts</a><br />
+            <a class="p-1" href="blogs.html">Blog Articles</a><br />
+            <a class="p-1" href="social-contact.html">Social Media</a><br />
+            <br>
+  
+          </div>
+  
+  
+          <div class="col-md-3">
+            <h5 style="color: white;">Our Services</h5>
+  
+            <a class="p-1" href="/projects">Projects</a><br />
+            <a class="p-1" href="/surveys">Surveys</a><br />
+            <br />
+            <h5 style="color: white">Available in:</h5>
+            <a class="p-1"  href="#"><img src="../images/android.png" class="logo-icon" alt="icon-android"></a>
+            <a class="p-1"  href="#"><img src="../images/apple.png" class="logo-icon" alt="icon-apple"></a>
+            <br>
+            <br>
+          </div>
+          <div class="col-md-3">
+            <h5 style="color:white;">Contact Us</h5>
+            <a href="tel:+917906980871">
+              <img src="../images/call.png" class="logo-icon-small" alt="icon-call"> +(91) 7906980871</a>
+            <br />
+            <a href="mailto:werrhelpinghands@gmail.com">
+              <img src="../images/gmail.png" class="logo-icon-small" alt="icon-gmail"> werrhelpinghands@gmail.com</a><br />
+            <br>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448181.16374162206!2d76.81306442366603!3d28.647279935570428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1561834027057!5m2!1sen!2sin"
+                frameborder="10px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="container-fluid bottomFooter" style="background-color: grey;">
-      <div class="row">
-        <div class="col-12 text-center pt-2">
-          <p class="foot" style="font-size: 12px; font-weight: 600px;">
-            Copyrights @ Helping Hands 2020 - All Rights Reserved
-          </p>
+      <div>
+        <!-- hitwebcounter Code START -->
+  <a href="#" >
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7230855&style=0006&nbdigits=5&type=ip&initCount=0" title="User Stats" Alt="PHP Hits Count"  style="width: 90px;height: 30px;" border="0" >
+    </a>   
+      </div>
+           
+      <div class="container-fluid bottomFooter" style="background-color: grey;">
+        <div class="row">
+          <div class="col-12 text-center pt-2">
+            <p class="foot" style="font-size: 12px; font-weight: 600px;">
+              Copyrights @ Helping Hands 2020 - All Rights Reserved
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
     <script src="../javascript/index.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
